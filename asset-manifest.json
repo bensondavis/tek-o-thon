@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tek-o-thon/static/css/main.659dd9a9.css",
-    "main.js": "/tek-o-thon/static/js/main.60645513.js",
+    "main.js": "/tek-o-thon/static/js/main.c0e01ff2.js",
     "static/media/schedule.pdf": "/tek-o-thon/static/media/schedule.c9b023bc901e7c5d398f.pdf",
     "static/media/guidelines.pdf": "/tek-o-thon/static/media/guidelines.b87fc1862e6a57b1171b.pdf",
     "static/media/square-purple-1.png": "/tek-o-thon/static/media/square-purple-1.ed3a5e3801e35e68ab23.png",
@@ -41,10 +41,10 @@
     "static/media/nucleo.woff2": "/tek-o-thon/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
     "index.html": "/tek-o-thon/index.html",
     "main.659dd9a9.css.map": "/tek-o-thon/static/css/main.659dd9a9.css.map",
-    "main.60645513.js.map": "/tek-o-thon/static/js/main.60645513.js.map"
+    "main.c0e01ff2.js.map": "/tek-o-thon/static/js/main.c0e01ff2.js.map"
   },
   "entrypoints": [
     "static/css/main.659dd9a9.css",
-    "static/js/main.60645513.js"
+    "static/js/main.c0e01ff2.js"
   ]
 }
