@@ -202,7 +202,7 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-coins" />
                   Sponsors
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/">
+                <DropdownItem tag={Link} to="/team">
                   <i className="tim-icons icon-single-02" />
                   Team
                 </DropdownItem>

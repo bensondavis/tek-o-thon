@@ -11,6 +11,7 @@ import LandingPage from "views/examples/LandingPage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import SchedulePage from "views/examples/SchedulePage.js";
+import Team from "views/examples/Team";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -36,7 +37,11 @@ root.render(
       />
       <Route 
         path={"/leaderboard"}
-        render={(props) => <ProfilePage {...props} />}
+        render={(props) => <Index {...props} />}
+      />
+      <Route 
+        path={"/team"}
+        render={(props) => <Team {...props} />}
       />
       {/* <Redirect from="/" to="/home" /> */}
       <Redirect from="*" to="/home" />

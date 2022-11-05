@@ -9,7 +9,6 @@ import { Container } from "reactstrap";
 export default function SchedulePage() {
   React.useEffect(() => {
     document.body.classList.toggle("landing-page");
-    // Specify how to clean up after this effect:
     return function cleanup() {
       document.body.classList.toggle("landing-page");
     };
