@@ -150,7 +150,7 @@ export default function IndexNavbar() {
                 Event details
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-              <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
+              <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
                   <i class="fa-solid fa-house"></i>
                   Home
                 </DropdownItem>
