@@ -1,10 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.285c86e5.css",
-    "main.js": "/static/js/main.f90f4cd4.js",
+    "main.js": "/static/js/main.4719ba8a.js",
     "static/media/schedule.pdf": "/static/media/schedule.c9b023bc901e7c5d398f.pdf",
+    "static/media/IMG_20221105_120602.jpg": "/static/media/IMG_20221105_120602.1a49d6f0190902034cf8.jpg",
+    "static/media/IMG_20221105_120903.jpg": "/static/media/IMG_20221105_120903.e04fdb2558b5fa50399a.jpg",
+    "static/media/IMG_20221105_120549.jpg": "/static/media/IMG_20221105_120549.473dc7a275d34e983c4d.jpg",
     "static/media/guidelines.pdf": "/static/media/guidelines.b87fc1862e6a57b1171b.pdf",
+    "static/media/IMG_20221105_121055.jpg": "/static/media/IMG_20221105_121055.aca8849929d41fd42a0f.jpg",
     "static/media/square-purple-1.png": "/static/media/square-purple-1.ed3a5e3801e35e68ab23.png",
+    "static/media/IMG_20221105_120537.jpg": "/static/media/IMG_20221105_120537.586a26675c34c9e2afff.jpg",
+    "static/media/IMG_20221105_120613.jpg": "/static/media/IMG_20221105_120613.e36260f4d9e7f13025e2.jpg",
     "static/media/poster.jpg": "/static/media/poster.3bdb1438b5e0b4752894.jpg",
     "static/media/square4.png": "/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/static/media/square1.082ea17aaf44aed9868a.png",
@@ -20,8 +26,10 @@
     "static/media/fabien-bazanegue.jpg": "/static/media/fabien-bazanegue.3c5ff5a0fa1808d7747e.jpg",
     "static/media/dots.png": "/static/media/dots.1e305f981d41a2c30adb.png",
     "static/media/mark-finn.jpg": "/static/media/mark-finn.40b788574c95a0ec347e.jpg",
+    "static/media/IMG_20221105_120625.jpg": "/static/media/IMG_20221105_120625.d48701eadf50beccee42.jpg",
     "static/media/blob.png": "/static/media/blob.e39506780c69b0fd8920.png",
     "static/media/scet.png": "/static/media/scet.6c4b6df91372df5ae1ed.png",
+    "static/media/IMG_20221105_122156.jpg": "/static/media/IMG_20221105_122156.061d30a1fcbd648286ed.jpg",
     "static/media/chester-wade.jpg": "/static/media/chester-wade.e891184f2ebb6f4f9691.jpg",
     "static/media/path1.png": "/static/media/path1.a0d20b6041dada5ed4fd.png",
     "static/media/path2.png": "/static/media/path2.35e76a63e5bc4801dd9c.png",
@@ -41,10 +49,10 @@
     "static/media/nucleo.woff2": "/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
     "index.html": "/index.html",
     "main.285c86e5.css.map": "/static/css/main.285c86e5.css.map",
-    "main.f90f4cd4.js.map": "/static/js/main.f90f4cd4.js.map"
+    "main.4719ba8a.js.map": "/static/js/main.4719ba8a.js.map"
   },
   "entrypoints": [
     "static/css/main.285c86e5.css",
-    "static/js/main.f90f4cd4.js"
+    "static/js/main.4719ba8a.js"
   ]
 }
