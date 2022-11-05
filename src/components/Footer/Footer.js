@@ -72,7 +72,7 @@ export default function Footer() {
                 id="tooltip622135962"
                 target="_blank"
               >
-                <i className="fab fa-discord" />
+                <i class="fa-brands fa-discord" style={{marginTop: "10px"}}></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip622135962">
                 Join us
@@ -80,11 +80,23 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://instagram.com/tekothon22?igshid=YmMyMTA2M2Y="
+                href="https://www.instagram.com/tekothon_22"
                 id="tooltip230450801"
                 target="_blank"
               >
                 <i className="fab fa-instagram" />
+              </Button>
+              <UncontrolledTooltip delay={0} target="tooltip230450801">
+                Follow us
+              </UncontrolledTooltip>
+              <Button
+                className="btn-icon btn-neutral btn-round btn-simple"
+                color="default"
+                href="https://www.facebook.com/profile.php?id=100087642903118"
+                id="tooltip230450801"
+                target="_blank"
+              >
+                <i className="fab fa-facebook" />
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip230450801">
                 Follow us

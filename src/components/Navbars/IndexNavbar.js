@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
@@ -68,23 +51,20 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToTop = () =>{
+  const scrollToTop = () => {
     window.scrollTo({
-      top: 0, 
-      behavior: 'smooth'
+      top: 0,
+      behavior: "smooth",
     });
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <img src={logo} width={40} />
-            <span>TEK-O-THON</span>
+          <NavbarBrand to="/" tag={Link} id="navbar-brand" onClick={scrollToTop}>
+            <img src={logo} width={23} />
+            <span>  TEK-O-THON</span>
           </NavbarBrand>
-          {/* <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
-          </UncontrolledTooltip> */}
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -121,22 +101,10 @@ export default function IndexNavbar() {
             </Row>
           </div>
           <Nav navbar>
-            {/* <NavItem className="p-0">
+            <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
-              </NavLink>
-            </NavItem> */}
-            {/* <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100087642903118"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
@@ -144,8 +112,7 @@ export default function IndexNavbar() {
                 <i className="fab fa-facebook-square" />
                 <p className="d-lg-none d-xl-none">Facebook</p>
               </NavLink>
-              
-            </NavItem> */}
+            </NavItem>
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
@@ -154,7 +121,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Discord"
               >
-                <i className="fab fa-discord" style={{marginTop: "2px"}}></i>
+                <i class="fa-brands fa-discord"></i>
                 <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
@@ -183,28 +150,28 @@ export default function IndexNavbar() {
                 Event details
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                {/* <DropdownItem href="#">
-                  <i className="tim-icons icon-paper" />
-                  Documentation
-                </DropdownItem> */}
-                {/* <DropdownItem tag={Link} to="/register">
-                  <i className="tim-icons icon-bullet-list-67" />
-                  Register Page
-                </DropdownItem> */}
+              <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
+                  <i class="fa-solid fa-house"></i>
+                  Home
+                </DropdownItem>
                 <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
-                  <i className="tim-icons icon-calendar-60" />
+                  <i class="fa-solid fa-calendar-days"></i>
                   Schedule
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/leaderboard" onClick={scrollToTop}>
-                  <i className="tim-icons icon-trophy" />
+                <DropdownItem
+                  tag={Link}
+                  to="/leaderboard"
+                  onClick={scrollToTop}
+                >
+                  <i class="fa-solid fa-medal"></i>
                   Leaderboard
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
-                  <i className="tim-icons icon-coins" />
+                  <i class="fa-solid fa-coins"></i>
                   Sponsors
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/team" onClick={scrollToTop}>
-                  <i className="tim-icons icon-single-02" />
+                  <i class="fa-solid fa-people-group"></i>
                   Team
                 </DropdownItem>
               </DropdownMenu>
@@ -214,7 +181,7 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSf_q9IfcjPppxOtjT7WhR9wrEhh8-g-88-kGIAS76D2iTOrEw/viewform"
+                href="https://forms.gle/1Dh95bgdjz2vq5SK6"
               >
                 <i className="tim-icons icon-spaceship" /> Register
               </Button>

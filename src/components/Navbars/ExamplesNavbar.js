@@ -12,7 +12,7 @@ import {
   Row,
   Col
 } from "reactstrap";
-import logo from "../../assets/img/tot-logo-bg-removed.png"
+import logo from "../../assets/img/logo.png"
 
 export default function ExamplesNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
@@ -57,15 +57,13 @@ export default function ExamplesNavbar() {
       behavior: 'smooth'
     });
   };
-  // const navigateHome = () => {
-  //   history.push("/");
-  // }
+
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <img src={logo} width={50} />
+            <img src={logo} width={25} />
             <span>Tek-O-thon </span>
           </NavbarBrand>
           <button
@@ -108,25 +106,25 @@ export default function ExamplesNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="#"
-                rel="noopener noreferrer"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fab fa-twitter" />
-                <p className="d-lg-none d-xl-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem className="p-0">
-              <NavLink
-                data-placement="bottom"
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100087642903118"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Like us on Facebook"
               >
                 <i className="fab fa-facebook-square" />
                 <p className="d-lg-none d-xl-none">Facebook</p>
+              </NavLink>
+            </NavItem>
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="https://discord.gg/BNQ8feJM"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Follow us on Discord"
+              >
+                <i className="fab fa-discord" style={{ marginTop: "2px" }}></i>
+                <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
             <NavItem className="p-0">
@@ -147,7 +145,7 @@ export default function ExamplesNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href=""
+                href="https://forms.gle/Cv11dbYJrZXaPnTu6"
               >
                 <i className="tim-icons icon-spaceship" /> Register
               </Button>

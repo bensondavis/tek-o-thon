@@ -1,33 +1,66 @@
 import { Button, Container, Row, Col } from "reactstrap";
-import guidelines from "./files/guidelines.pdf";
-import schedules from "./files/schedule.pdf";
-import poster from "./files/poster.jpg";
-
+import { CssVarsProvider } from "@mui/joy/styles";
+import { useState } from "react";
+import ImageView from "./ImageView";
+import { Grid } from "@mui/joy";
 
 function Schedule() {
+  const [openView, setOpenView] = useState(false);
+  const [imgType, setImgType] = useState("");
+
+  const handleOpenViewer = (val) => {
+    setOpenView(true);
+    switch (val) {
+      case 1:
+        setImgType("poster");
+        break;
+      case 2:
+        setImgType("guidelines");
+        break;
+      case 3:
+        setImgType("schedule");
+        break;
+    }
+  };
+
+  const handleViewerOnClose = (val) => {
+    setOpenView(val);
+  };
+
   return (
     <div className=" section section-tabs">
-      <Container style={{textAlign: "center"}}>
-        <Row className="row-grid justify-content-between align-items-center">
-          <Col>
-            <a href={poster} download>
-              <Button color="primary">Poster</Button>
-            </a>
-          </Col>
-          <Col>
-            <a href={guidelines} download>
-              <Button color="primary">Guidlines</Button>
-            </a>
-          </Col>
-          <Col>
-            <a href={schedules} download>
-              <Button color="primary" to="schedule-page">
-                Schedule
-              </Button>
-            </a>
-          </Col>
-        </Row>
+      <Container style={{ textAlign: "center" }}>
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-evenly"
+        alignItems="center"
+        style={{maxHeigth: "90vh"}}
+      >
+        <Grid item>
+          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(1)}>
+            Poster
+          </Button>
+        </Grid>
+        <Grid item>
+          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(2)}>
+            Guidlines
+          </Button>
+        </Grid>
+        <Grid item>
+          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(3)}>
+            Schedule
+          </Button>
+        </Grid>
+      </Grid>
       </Container>
+      <CssVarsProvider>
+        <ImageView
+          imgType={imgType}
+          open={openView}
+          onClose={handleViewerOnClose}
+        />
+      </CssVarsProvider>
     </div>
   );
 }

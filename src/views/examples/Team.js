@@ -1,4 +1,4 @@
-import Navbar from "components/Navbars/ExamplesNavbar.js";
+import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import React from "react";
 import TeamCard from "./ProfileCard";
@@ -32,7 +32,6 @@ export default function Team() {
           ))}
         </Grid>
       </div>
-
       <Footer />
     </>
   );

@@ -1,11 +1,13 @@
-import bensonImg from "../../assets/team/IMG_20221105_120613.jpg";
-import christyImg from "../../assets/team/IMG_20221105_120537.jpg";
-import annaImg from "../../assets/team/IMG_20221105_120549.jpg";
-import anaghaImg from "../../assets/team/IMG_20221105_120602.jpg";
-import aswinImg from "../../assets/team/IMG_20221105_120625.jpg";
-import archanaImg from "../../assets/team/IMG_20221105_120903.jpg";
-import gokulImg from "../../assets/team/IMG_20221105_121055.jpg";
-import astonImg from "../../assets/team/IMG_20221105_122156.jpg";
+import bensonImg from "../../assets/team/benson.jpg";
+import christyImg from "../../assets/team/christy.jpg";
+import annaImg from "../../assets/team/anna.jpg";
+import anaghaImg from "../../assets/team/anagha.jpg";
+import aswinImg from "../../assets/team/aswin.jpg";
+import archanaImg from "../../assets/team/archana.jpg";
+import gokulImg from "../../assets/team/gokul.jpg";
+import astonImg from "../../assets/team/aston.jpeg";
+import ayyappanImg from "../../assets/team/ayyappan.jpg";
+import amalImg from "../../assets/team/amal.jpg"
 
 export const data = [
   {
@@ -46,6 +48,16 @@ export const data = [
   {
     img: astonImg,
     name: "Aston Raju",
+    role: "Core Team",
+  },
+  {
+    img: ayyappanImg,
+    name: "Aswin Ayyappadas",
+    role: "Core Team",
+  },
+  {
+    img: amalImg,
+    name: "Amal Yousaf",
     role: "Core Team",
   },
 ];

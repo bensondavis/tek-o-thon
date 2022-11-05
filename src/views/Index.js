@@ -6,10 +6,12 @@ import PageHeader from "components/PageHeader/PageHeader.js";
 import Footer from "components/Footer/Footer.js";
 
 // sections for this page/view
-import Basics from "views/IndexSections/Basics.js";
-import Themes from "views/IndexSections/Themes";
 import Links from "views/IndexSections/Links";
 import Association from "views/IndexSections/Association";
+import Basics from "views/IndexSections/Basics.js";
+import Themes from "views/IndexSections/Themes";
+
+
 
 export default function Index() {
   React.useEffect(() => {

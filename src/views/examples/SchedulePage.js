@@ -1,9 +1,9 @@
 import Footer from "components/Footer/Footer.js";
-import AppNavbar from "components/Navbars/ExamplesNavbar.js";
+import AppNavbar from "components/Navbars/IndexNavbar.js";
 import React from "react";
 import "../../assets/css/Schedule.css";
-import Schedulesingle from "../IndexSections/SheduleSingle";
-import { data } from "../IndexSections/Scheduledata";
+import Schedulesingle from "./SheduleSingle";
+import { data } from "./Scheduledata";
 import { Container } from "reactstrap";
 
 export default function SchedulePage() {
