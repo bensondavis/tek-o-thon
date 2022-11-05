@@ -1,23 +1,5 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link, useHistory} from "react-router-dom";
-// reactstrap components
 import {
   Button,
   Collapse,
@@ -69,6 +51,12 @@ export default function ExamplesNavbar() {
     setCollapseOut("");
   };
 
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  };
   // const navigateHome = () => {
   //   history.push("/");
   // }
@@ -80,9 +68,6 @@ export default function ExamplesNavbar() {
             <img src={logo} width={50} />
             <span>Tek-O-thon </span>
           </NavbarBrand>
-          {/* <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
-          </UncontrolledTooltip> */}
           <button
             aria-expanded={collapseOpen}
             className="navbar-toggler navbar-toggler"
@@ -169,15 +154,10 @@ export default function ExamplesNavbar() {
               
             </NavItem>
             <NavItem>
-              <NavLink tag={Link} to="/">
+              <NavLink tag={Link} to="/" onClick={scrollToTop}>
                 Back to home
               </NavLink>
             </NavItem>
-            {/* <NavItem>
-              <NavLink href="https://github.com/creativetimofficial/blk-design-system-react/issues">
-                Have an issue?
-              </NavLink>
-            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>

@@ -17,7 +17,7 @@
 */
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/img/tot-logo.png";
+import logo from "../../assets/img/logo.png";
 import {
   Button,
   Collapse,
@@ -68,10 +68,11 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
@@ -79,7 +80,7 @@ export default function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
             <img src={logo} width={40} />
-            <span>Tek-O-thon</span>
+            <span>TEK-O-THON</span>
           </NavbarBrand>
           {/* <UncontrolledTooltip placement="bottom" target="navbar-brand">
             Designed and Coded by Creative Tim
@@ -160,7 +161,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
-                href="https://instagram.com/tekothon22?igshid=YmMyMTA2M2Y="
+                href="https://www.instagram.com/tekothon_22"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Instagram"
@@ -179,30 +180,30 @@ export default function IndexNavbar() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Getting started
+                Event details
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                <DropdownItem href="#">
+                {/* <DropdownItem href="#">
                   <i className="tim-icons icon-paper" />
                   Documentation
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/register">
+                </DropdownItem> */}
+                {/* <DropdownItem tag={Link} to="/register">
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/schedule">
+                </DropdownItem> */}
+                <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
                   <i className="tim-icons icon-calendar-60" />
                   Schedule
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/leaderboard">
+                <DropdownItem tag={Link} to="/leaderboard" onClick={scrollToTop}>
                   <i className="tim-icons icon-trophy" />
                   Leaderboard
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/">
+                <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
                   <i className="tim-icons icon-coins" />
                   Sponsors
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/team">
+                <DropdownItem tag={Link} to="/team" onClick={scrollToTop}>
                   <i className="tim-icons icon-single-02" />
                   Team
                 </DropdownItem>
@@ -213,18 +214,9 @@ export default function IndexNavbar() {
                 className="nav-link d-none d-lg-block"
                 color="primary"
                 target="_blank"
-                href="#"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf_q9IfcjPppxOtjT7WhR9wrEhh8-g-88-kGIAS76D2iTOrEw/viewform"
               >
                 <i className="tim-icons icon-spaceship" /> Register
-              </Button>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="default"
-                onClick={scrollToDownload}
-              >
-                <i className="tim-icons icon-cloud-download-93" /> Download
               </Button>
             </NavItem>
           </Nav>

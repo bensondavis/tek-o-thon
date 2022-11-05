@@ -1,20 +1,3 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/tot-logo.png"
@@ -31,7 +14,13 @@ import {
 } from "reactstrap";
 
 export default function Footer() {
-  const title = "Tek O thon";
+  const title = "TEK-O-THON";
+  const scrollToTop = () =>{
+    window.scrollTo({
+      top: 0, 
+      behavior: 'smooth'
+    });
+  };
   return (
     <footer className="footer">
       <Container>
@@ -43,22 +32,17 @@ export default function Footer() {
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink to="/" tag={Link}>
+                <NavLink to="/" tag={Link} onClick={scrollToTop}>
                   Home
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Schedule" tag={Link}>
+                <NavLink to="/Schedule" tag={Link} onClick={scrollToTop}>
                   Schedule
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/register-page" tag={Link}>
-                  Register
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/team" tag={Link}>
+                <NavLink to="/team" tag={Link} onClick={scrollToTop}>
                   Team
                 </NavLink>
               </NavItem>
@@ -67,12 +51,12 @@ export default function Footer() {
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink href="#">
+                <NavLink href="#" onClick={scrollToTop}>
                   Contact Us
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/team" tag={Link}>
+                <NavLink to="/team" tag={Link} onClick={scrollToTop}>
                   About Us
                 </NavLink>
               </NavItem>
