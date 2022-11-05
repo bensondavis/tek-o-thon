@@ -132,7 +132,7 @@ export default function IndexNavbar() {
                 <p className="d-lg-none d-xl-none">Twitter</p>
               </NavLink>
             </NavItem> */}
-            <NavItem className="p-0">
+            {/* <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
                 href="#"
@@ -142,6 +142,19 @@ export default function IndexNavbar() {
               >
                 <i className="fab fa-facebook-square" />
                 <p className="d-lg-none d-xl-none">Facebook</p>
+              </NavLink>
+              
+            </NavItem> */}
+            <NavItem className="p-0">
+              <NavLink
+                data-placement="bottom"
+                href="https://discord.gg/BNQ8feJM"
+                rel="noopener noreferrer"
+                target="_blank"
+                title="Follow us on Discord"
+              >
+                <i className="fab fa-discord" style={{marginTop: "2px"}}></i>
+                <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
             <NavItem className="p-0">
@@ -173,13 +186,17 @@ export default function IndexNavbar() {
                   <i className="tim-icons icon-paper" />
                   Documentation
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/register-page">
+                <DropdownItem tag={Link} to="/register">
                   <i className="tim-icons icon-bullet-list-67" />
                   Register Page
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/schedule-page">
+                <DropdownItem tag={Link} to="/schedule">
                   <i className="tim-icons icon-calendar-60" />
                   Schedule
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/leaderboard">
+                  <i className="tim-icons icon-trophy" />
+                  Leaderboard
                 </DropdownItem>
                 <DropdownItem tag={Link} to="/">
                   <i className="tim-icons icon-coins" />
