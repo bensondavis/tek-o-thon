@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a759e25.css",
-    "main.js": "/static/js/main.dd3f49f2.js",
+    "main.css": "/static/css/main.3798663f.css",
+    "main.js": "/static/js/main.132f0ce8.js",
     "static/media/square-purple-1.png": "/static/media/square-purple-1.ed3a5e3801e35e68ab23.png",
     "static/media/schedule.jpg": "/static/media/schedule.a1f43bff416adc81523c.jpg",
     "static/media/guidelines.jpg": "/static/media/guidelines.c138a0c94a34de09f9ae.jpg",
@@ -40,17 +40,21 @@
     "static/media/path3.png": "/static/media/path3.3f66cc18d0e5e2526eb2.png",
     "static/media/cercuri.png": "/static/media/cercuri.05cc0d04cc8cf5ceeb5d.png",
     "static/media/tekwizalogow.png": "/static/media/tekwizalogow.31e82778916f14c32f1c.png",
+    "static/media/nucleo.eot": "/static/media/nucleo.bd5cce8bf40be5947637.eot",
+    "static/media/nucleo.ttf": "/static/media/nucleo.35b08447277ca7bf9f09.ttf",
     "static/media/tot-logo.png": "/static/media/tot-logo.20ce55d3aad1a1d45f89.png",
     "static/media/aces.png": "/static/media/aces.cdd98322794a756cc8ca.png",
     "static/media/patrat.png": "/static/media/patrat.aeec33e42c0e3d453dd0.png",
     "static/media/mike.jpg": "/static/media/mike.fe979cd14af7d0fe5ad5.jpg",
     "static/media/waves.png": "/static/media/waves.ac46eaefac136824e252.png",
+    "static/media/nucleo.woff": "/static/media/nucleo.5c65ef4d6434bb8062a3.woff",
+    "static/media/nucleo.woff2": "/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
     "index.html": "/index.html",
-    "main.8a759e25.css.map": "/static/css/main.8a759e25.css.map",
-    "main.dd3f49f2.js.map": "/static/js/main.dd3f49f2.js.map"
+    "main.3798663f.css.map": "/static/css/main.3798663f.css.map",
+    "main.132f0ce8.js.map": "/static/js/main.132f0ce8.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a759e25.css",
-    "static/js/main.dd3f49f2.js"
+    "static/css/main.3798663f.css",
+    "static/js/main.132f0ce8.js"
   ]
 }
