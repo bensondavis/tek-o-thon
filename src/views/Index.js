@@ -10,6 +10,7 @@ import Links from "views/IndexSections/Links";
 import Association from "views/IndexSections/Association";
 import Basics from "views/IndexSections/Basics.js";
 import Themes from "views/IndexSections/Themes";
+import Prizes from "./IndexSections/Prizes";
 
 
 
@@ -35,6 +36,7 @@ export default function Index() {
           {/* <Typography /> */}
           {/* <JavaScript /> */}
           {/* <NucleoIcons /> */}
+          <Prizes/>
           <Association />
           {/* <Examples /> */}
           {/* <Download /> */}

@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 export default function Navbars() {
   return (
     <div className="section section-navbars">
-      <img alt="..." className="path" src={require("assets/img/path3.png")} />
+      <img alt="..." className="path" src={require("assets/img/path5.png")} />
 
       <Container id="menu-dropdown">
         <h2 className="title">Focus</h2>
