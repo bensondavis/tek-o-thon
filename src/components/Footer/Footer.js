@@ -72,7 +72,7 @@ export default function Footer() {
                 id="tooltip622135962"
                 target="_blank"
               >
-                <i class="fa-brands fa-discord" style={{marginTop: "10px"}}></i>
+                <i className="fa-brands fa-discord" style={{marginTop: "10px"}}></i>
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip622135962">
                 Join us

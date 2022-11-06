@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
+import Divider from '@mui/joy/Divider';
 import {
   Button,
   Collapse,
@@ -41,16 +42,20 @@ export default function IndexNavbar() {
       setColor("navbar-transparent");
     }
   };
+
   const toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     setCollapseOpen(!collapseOpen);
   };
+
   const onCollapseExiting = () => {
     setCollapseOut("collapsing-out");
   };
+
   const onCollapseExited = () => {
     setCollapseOut("");
   };
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -61,9 +66,14 @@ export default function IndexNavbar() {
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand to="/" tag={Link} id="navbar-brand" onClick={scrollToTop}>
+          <NavbarBrand
+            to="/"
+            tag={Link}
+            id="navbar-brand"
+            onClick={scrollToTop}
+          >
             <img src={logo} width={23} />
-            <span>  TEK-O-THON</span>
+            <span> TEK-O-THON</span>
           </NavbarBrand>
           <button
             aria-expanded={collapseOpen}
@@ -83,24 +93,73 @@ export default function IndexNavbar() {
           onExited={onCollapseExited}
         >
           <div className="navbar-collapse-header">
-            <Row>
-              <Col className="collapse-brand" xs="6">
-                <a href="#" onClick={(e) => e.preventDefault()}>
-                  Tek-O-thon
-                </a>
-              </Col>
-              <Col className="collapse-close text-right" xs="6">
-                <button
-                  aria-expanded={collapseOpen}
-                  className="navbar-toggler"
-                  onClick={toggleCollapse}
-                >
-                  <i className="tim-icons icon-simple-remove" />
-                </button>
-              </Col>
-            </Row>
+            <button
+              aria-expanded={collapseOpen}
+              className="navbar-toggler"
+              onClick={toggleCollapse}
+              style={{ position: "absolute", right: 10 }}
+            >
+              <i className="fa-solid fa-xmark close-icon-white"></i>
+            </button>
           </div>
           <Nav navbar>
+            <NavItem className="p-0">
+              <NavLink onClick={scrollToTop} tag={Link} to="/">
+                <i className="fa-solid fa-house"></i>
+                <p className="d-lg-none d-xl-none">Home</p>
+              </NavLink>
+            </NavItem>
+
+            <UncontrolledDropdown nav>
+              <DropdownToggle
+                caret
+                color="default"
+                data-toggle="dropdown"
+                href="#"
+                nav
+                onClick={(e) => e.preventDefault()}
+              >
+                <i className="fa fa-cogs d-lg-none d-xl-none" />
+                Event details
+              </DropdownToggle>
+              <DropdownMenu className="dropdown-with-icons">
+                {/* <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
+                  <i class="fa-solid fa-house"></i>
+                  Home
+                </DropdownItem> */}
+                <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
+                  <i className="fa-solid fa-calendar-days"></i>
+                  Schedule
+                </DropdownItem>
+                <DropdownItem
+                  tag={Link}
+                  to="/leaderboard"
+                  onClick={scrollToTop}
+                >
+                  <i className="fa-solid fa-medal"></i>
+                  Winners
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
+                  <i className="fa-solid fa-coins"></i>
+                  Sponsors
+                </DropdownItem>
+                <DropdownItem tag={Link} to="/team" onClick={scrollToTop}>
+                  <i className="fa-solid fa-people-group"></i>
+                  Team
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            <NavItem>
+              <Button
+                className="nav-link d-none d-lg-block"
+                color="primary"
+                target="_blank"
+                href="https://forms.gle/1Dh95bgdjz2vq5SK6"
+              >
+                <i className="tim-icons icon-spaceship" /> Register
+              </Button>
+            </NavItem>
+            <Divider orientation="vertical" inset="none" sx={{mr: 1}}/>
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
@@ -121,7 +180,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Discord"
               >
-                <i class="fa-brands fa-discord"></i>
+                <i className="fa-brands fa-discord"></i>
                 <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
@@ -136,55 +195,6 @@ export default function IndexNavbar() {
                 <i className="fab fa-instagram" />
                 <p className="d-lg-none d-xl-none">Instagram</p>
               </NavLink>
-            </NavItem>
-            <UncontrolledDropdown nav>
-              <DropdownToggle
-                caret
-                color="default"
-                data-toggle="dropdown"
-                href="#"
-                nav
-                onClick={(e) => e.preventDefault()}
-              >
-                <i className="fa fa-cogs d-lg-none d-xl-none" />
-                Event details
-              </DropdownToggle>
-              <DropdownMenu className="dropdown-with-icons">
-              <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
-                  <i class="fa-solid fa-house"></i>
-                  Home
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
-                  <i class="fa-solid fa-calendar-days"></i>
-                  Schedule
-                </DropdownItem>
-                <DropdownItem
-                  tag={Link}
-                  to="/leaderboard"
-                  onClick={scrollToTop}
-                >
-                  <i class="fa-solid fa-medal"></i>
-                  Leaderboard
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
-                  <i class="fa-solid fa-coins"></i>
-                  Sponsors
-                </DropdownItem>
-                <DropdownItem tag={Link} to="/team" onClick={scrollToTop}>
-                  <i class="fa-solid fa-people-group"></i>
-                  Team
-                </DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                target="_blank"
-                href="https://forms.gle/1Dh95bgdjz2vq5SK6"
-              >
-                <i className="tim-icons icon-spaceship" /> Register
-              </Button>
             </NavItem>
           </Nav>
         </Collapse>

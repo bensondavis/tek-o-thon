@@ -22,7 +22,7 @@ export const data = [
   },
   {
     img: anaghaImg,
-    name: "Anagha S",
+    name: "Anagha Saseendran",
     role: "Core Team",
   },
   {

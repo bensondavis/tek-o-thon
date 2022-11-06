@@ -104,7 +104,9 @@
   }
 
   &.bg-info {
-    background-color: $info !important;
+    // background-color: $info !important;
+    background: rgb(23,25,65);
+    background: linear-gradient(180deg,  rgb(23,25,65) 30%, rgba(0,95,255,0) 100%) !important;
   }
 
   &.bg-success {

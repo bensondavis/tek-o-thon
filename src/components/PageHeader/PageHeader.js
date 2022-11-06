@@ -18,18 +18,13 @@ export default function PageHeader() {
         direction={"column"}
         justifyContent="center"
         alignItems="center"
-        sx={{marginTop: "20vh"}}
+        sx={{ minHeight: "100%"}}
         >
-          {/* <div className="content-center brand"> */}
             <img src={logo} width={280} />
-            <div>
             <Typography variant="h1" fontSize={"3rem"} className={"title"}>TEK-O-THON</Typography>
-            </div>
-            
             {/* <h1 className="h1-seo">Tek-O-thon</h1> */}
             <Typography variant="h4" className={"title"} >THINK • CODE • INNOVATE</Typography>
             {/* <h3 className="d-none d-sm-block">THINK • CODE • INNOVATE</h3> */}
-          {/* </div> */}
         </Stack>
       </Container>
     </div>

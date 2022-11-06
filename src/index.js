@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import "assets/css/nucleo-icons.css";
+// import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
 
@@ -12,6 +12,7 @@ import RegisterPage from "views/examples/RegisterPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import SchedulePage from "views/examples/SchedulePage.js";
 import Team from "views/examples/Team";
+import Winner from "views/examples/Winner";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -37,7 +38,7 @@ root.render(
       />
       <Route 
         path={"/leaderboard"}
-        render={(props) => <Index {...props} />}
+        render={(props) => <Winner {...props} />}
       />
       <Route 
         path={"/team"}

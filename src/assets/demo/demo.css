@@ -511,3 +511,7 @@ body::-webkit-scrollbar {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
+
+.close-icon-white {
+  color: white;
+}

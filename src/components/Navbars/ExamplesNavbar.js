@@ -85,12 +85,12 @@ export default function ExamplesNavbar() {
         >
           <div className="navbar-collapse-header">
             <Row>
-              <Col className="collapse-brand" xs="6">
+              {/* <Col className="collapse-brand" xs="6">
                 <a href="#home" onClick={(e) => e.preventDefault()}>
                   Tek-O-thon
                   
                 </a>
-              </Col>
+              </Col> */}
               <Col className="collapse-close text-right" xs="6">
                 <button
                   aria-expanded={collapseOpen}
