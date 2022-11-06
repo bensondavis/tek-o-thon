@@ -2,17 +2,18 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-// import "assets/css/nucleo-icons.css";
+import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
 
 import Index from "views/Index.js";
-import LandingPage from "views/examples/LandingPage.js";
-import RegisterPage from "views/examples/RegisterPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
-import SchedulePage from "views/examples/SchedulePage.js";
-import Team from "views/examples/Team";
-import Winner from "views/examples/Winner";
+import LandingPage from "views/content/LandingPage.js";
+import RegisterPage from "views/content/RegisterPage.js";
+import ProfilePage from "views/content/ProfilePage.js";
+import SchedulePage from "views/content/SchedulePage.js";
+import Team from "views/content/Team";
+import Winner from "views/content/Winner";
+import Contact from "views/content/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -25,7 +26,7 @@ root.render(
         render={(props) => <LandingPage {...props} />}
       />
       <Route
-        path={"/Schedule"}
+        path={"/schedule"}
         render={(props) => <SchedulePage {...props} />}
       />
       <Route
@@ -43,6 +44,10 @@ root.render(
       <Route 
         path={"/team"}
         render={(props) => <Team {...props} />}
+      />
+      <Route 
+        path={"/contact"}
+        render={(props) => <Contact {...props} />}
       />
       {/* <Redirect from="/" to="/home" /> */}
       <Redirect from="*" to="/home" />

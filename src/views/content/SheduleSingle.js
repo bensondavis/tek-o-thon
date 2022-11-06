@@ -1,7 +1,6 @@
 import "../../assets/css/Schedulesingle.css"
 
 function Schedulesingle({ date, title, description, flag, data, index }) {
-  // const [len, setLen] = useState(data.length);
   const len = data.length;
   return (
     <div className="schedule_single_wrapper">

@@ -3,7 +3,7 @@ import AppNavbar from "components/Navbars/IndexNavbar.js";
 import React from "react";
 import "../../assets/css/Schedule.css";
 import Schedulesingle from "./SheduleSingle";
-import { data } from "./Scheduledata";
+import { data } from "../data/Scheduledata";
 import { Container } from "reactstrap";
 
 export default function SchedulePage() {

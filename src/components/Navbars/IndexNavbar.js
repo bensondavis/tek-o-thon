@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
-import Divider from '@mui/joy/Divider';
+import Divider from "@mui/joy/Divider";
 import {
   Button,
   Collapse,
@@ -15,8 +15,6 @@ import {
   NavLink,
   Nav,
   Container,
-  Row,
-  Col,
 } from "reactstrap";
 
 export default function IndexNavbar() {
@@ -123,10 +121,6 @@ export default function IndexNavbar() {
                 Event details
               </DropdownToggle>
               <DropdownMenu className="dropdown-with-icons">
-                {/* <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
-                  <i class="fa-solid fa-house"></i>
-                  Home
-                </DropdownItem> */}
                 <DropdownItem tag={Link} to="/schedule" onClick={scrollToTop}>
                   <i className="fa-solid fa-calendar-days"></i>
                   Schedule
@@ -147,20 +141,28 @@ export default function IndexNavbar() {
                   <i className="fa-solid fa-people-group"></i>
                   Team
                 </DropdownItem>
+                <DropdownItem tag={Link} to="/contact" onClick={scrollToTop}>
+                <i className="fa-solid fa-phone"></i>
+                  Contact Us
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <NavItem>
+            <NavItem className="p-0">
               <Button
-                className="nav-link d-none d-lg-block"
+                className="nav-link d-lg-block"
                 color="primary"
                 target="_blank"
-                href="https://forms.gle/1Dh95bgdjz2vq5SK6"
+                href="https://forms.gle/Cv11dbYJrZXaPnTu6"
+                style={{ minWidth: "100px", textAlign: "center" }}
               >
-                <i className="tim-icons icon-spaceship" /> Register
+                <i
+                  className="tim-icons icon-spaceship"
+                  style={{ marginLeft: "8px" }}
+                />
+                Register
               </Button>
             </NavItem>
-            <Divider orientation="vertical" inset="none" sx={{mr: 1}}/>
-            <NavItem className="p-0">
+            <NavItem className="p-0 d-none d-lg-block">
               <NavLink
                 data-placement="bottom"
                 href="https://www.facebook.com/profile.php?id=100087642903118"
@@ -172,7 +174,7 @@ export default function IndexNavbar() {
                 <p className="d-lg-none d-xl-none">Facebook</p>
               </NavLink>
             </NavItem>
-            <NavItem className="p-0">
+            <NavItem className="p-0 d-none d-lg-block">
               <NavLink
                 data-placement="bottom"
                 href="https://discord.gg/BNQ8feJM"
@@ -184,7 +186,7 @@ export default function IndexNavbar() {
                 <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
-            <NavItem className="p-0">
+            <NavItem className="p-0 d-none d-lg-block">
               <NavLink
                 data-placement="bottom"
                 href="https://www.instagram.com/tekothon_22"

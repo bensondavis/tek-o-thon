@@ -2,7 +2,7 @@ import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import React from "react";
 import TeamCard from "./ProfileCard";
-import { data } from "./TeamData";
+import { data } from "../data/TeamData";
 import { Grid } from "@mui/joy";
 
 export default function Team() {

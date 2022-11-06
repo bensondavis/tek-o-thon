@@ -51,7 +51,7 @@ export default function Footer() {
           <Col md="3">
             <Nav>
               <NavItem>
-                <NavLink href="#" onClick={scrollToTop}>
+                <NavLink to="/contact" tag={Link} onClick={scrollToTop}>
                   Contact Us
                 </NavLink>
               </NavItem>
