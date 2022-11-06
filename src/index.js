@@ -18,7 +18,7 @@ import Contact from "views/content/Contact";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter >
     <Switch>
       <Route path="/home" render={(props) => <Index {...props} />} />
       <Route
