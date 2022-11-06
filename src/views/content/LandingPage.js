@@ -37,8 +37,6 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import Footer from "components/Footer/Footer.js";
 
-// import bigChartData from "variables/charts.js";
-
 export default function LandingPage() {
   React.useEffect(() => {
     document.body.classList.toggle("landing-page");

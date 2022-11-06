@@ -56,7 +56,7 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/team" tag={Link} onClick={scrollToTop}>
+                <NavLink to="/landing-page" tag={Link} onClick={scrollToTop}>
                   About Us
                 </NavLink>
               </NavItem>

@@ -7,23 +7,24 @@ import archanaImg from "../../assets/team/archana.jpg";
 import gokulImg from "../../assets/team/gokul.jpg";
 import astonImg from "../../assets/team/aston.jpeg";
 import ayyappanImg from "../../assets/team/ayyappan.jpg";
-import amalImg from "../../assets/team/amal.jpg"
+import amalImg from "../../assets/team/amal.jpg";
+import hariImg from "../../assets/team/hari.jpg"
 
 export const data = [
   {
     img: christyImg,
     name: "Christy Vinny",
-    role: "Media",
+    role: "Media Specialist",
   },
   {
     img: annaImg,
     name: "Anna Rose Joshy",
-    role: "Core Team",
+    role: "Activities and Event Planner",
   },
   {
     img: anaghaImg,
     name: "Anagha Saseendran",
-    role: "Core Team",
+    role: "Activities and Event Planner",
   },
   {
     img: bensonImg,
@@ -33,31 +34,36 @@ export const data = [
   {
     img: aswinImg,
     name: "Aswin Santhosh",
-    role: "Core Team",
+    role: "Event Operations Manager",
   },
   {
     img: archanaImg,
     name: "Archana Sivadasan",
-    role: "Core Team",
+    role: "Event Head",
   },
   {
     img: gokulImg,
     name: "Gokul Gopinath",
-    role: "Core Team",
+    role: "Event Head",
   },
   {
     img: astonImg,
     name: "Aston Raju",
-    role: "Core Team",
+    role: "Activities and Event Planner",
   },
   {
     img: ayyappanImg,
     name: "Aswin Ayyappadas",
-    role: "Core Team",
+    role: "Sponsorship Coordinator",
   },
   {
     img: amalImg,
     name: "Amal Yousaf",
-    role: "Core Team",
+    role: "Sponsorship Coordinator",
   },
+  {
+    img: hariImg,
+    name: "Harikrishnan M R",
+    role: "Event Operations Manager"
+  }
 ];

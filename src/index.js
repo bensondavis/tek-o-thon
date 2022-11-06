@@ -38,7 +38,7 @@ root.render(
         render={(props) => <ProfilePage {...props} />}
       />
       <Route 
-        path={"/leaderboard"}
+        path={"/winners"}
         render={(props) => <Winner {...props} />}
       />
       <Route 

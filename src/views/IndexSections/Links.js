@@ -4,7 +4,6 @@ import { useState } from "react";
 import ImageView from "./ImageView";
 import { Grid } from "@mui/joy";
 
-
 function Schedule() {
   const [openView, setOpenView] = useState(false);
   const [imgType, setImgType] = useState("");
@@ -21,7 +20,8 @@ function Schedule() {
       case 3:
         setImgType("schedule");
         break;
-      default: break;
+      default:
+        break;
     }
   };
 
@@ -30,31 +30,43 @@ function Schedule() {
   };
 
   return (
-    <div className=" section section-tabs">
+    <div className=" section section-basic" id="basic-elements">   
       <Container style={{ textAlign: "center" }}>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignItems="center"
-        style={{maxHeigth: "90vh"}}
-      >
-        <Grid item>
-          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(1)}>
-            Poster
-          </Button>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-evenly"
+          alignItems="center"
+          style={{ maxHeigth: "90vh" }}
+        >
+          <Grid item>
+            <Button
+              color="primary"
+              style={{ width: "10rem" }}
+              onClick={() => handleOpenViewer(1)}
+            >
+              Poster
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button
+              color="primary"
+              style={{ width: "10rem" }}
+              onClick={() => handleOpenViewer(2)}
+            >
+              Guidlines
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button
+              color="primary"
+              style={{ width: "10rem" }}
+              onClick={() => handleOpenViewer(3)}
+            >
+              Schedule
+            </Button>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(2)}>
-            Guidlines
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button color="primary" style={{width: "10rem"}} onClick={() => handleOpenViewer(3)}>
-            Schedule
-          </Button>
-        </Grid>
-      </Grid>
       </Container>
       <CssVarsProvider>
         <ImageView

@@ -127,7 +127,7 @@ export default function IndexNavbar() {
                 </DropdownItem>
                 <DropdownItem
                   tag={Link}
-                  to="/leaderboard"
+                  to="/winners"
                   onClick={scrollToTop}
                 >
                   <i className="fa-solid fa-medal"></i>
