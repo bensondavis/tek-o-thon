@@ -1,8 +1,9 @@
-import { Button, Container, Row, Col } from "reactstrap";
+import { Button, Container } from "reactstrap";
 import { CssVarsProvider } from "@mui/joy/styles";
 import { useState } from "react";
 import ImageView from "./ImageView";
 import { Grid } from "@mui/joy";
+
 
 function Schedule() {
   const [openView, setOpenView] = useState(false);
@@ -20,6 +21,7 @@ function Schedule() {
       case 3:
         setImgType("schedule");
         break;
+      default: break;
     }
   };
 

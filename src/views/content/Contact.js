@@ -26,9 +26,10 @@ export default function Contact() {
         <div className="squares square7" />
         <Container>
           <Stack
+            direction={"column"}
             justifyContent="center"
             alignItems="center"
-            sx={{ minHeight: "100vh" }}
+            sx={{minHeight: "100%"}}
           >
             <Typography
               variant="h1"
@@ -38,18 +39,19 @@ export default function Contact() {
             >
               Contacts.
             </Typography>
-            <Stack direction={"column"} sx={{ minWidth: "750px" }}>
+            <Stack direction={"column"}>
               {contactData.map((data, index) => (
                 <ContactSingle
                   name={data.name}
                   phone={data.phone}
+                  role={data.role}
                   key={index}
                 />
               ))}
             </Stack>
           </Stack>
         </Container>
-      </div>
+      </div>    
       <Footer />
     </>
   );

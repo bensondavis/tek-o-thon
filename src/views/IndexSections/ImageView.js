@@ -22,6 +22,7 @@ export default function ImageView({ imgType, open, onClose }) {
       case "schedule":
         setCurrImg(schedule);
         break;
+      default: break;
     }
   }, [imgType]);
 
