@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect, HashRouter } from "react-router-dom";
 
 import "assets/css/nucleo-icons.css";
 import "assets/scss/blk-design-system-react.scss";
@@ -18,7 +18,7 @@ import Contact from "views/content/Contact";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route path="/home" render={(props) => <Index {...props} />} />
       <Route
@@ -52,5 +52,5 @@ root.render(
       {/* <Redirect from="/" to="/home" /> */}
       <Redirect from="*" to="/home" />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
