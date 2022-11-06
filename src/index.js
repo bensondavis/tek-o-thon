@@ -50,7 +50,7 @@ root.render(
         render={(props) => <Contact {...props} />}
       />
       {/* <Redirect from="/" to="/home" /> */}
-      <Redirect from="*" to="/" />
+      <Redirect from="*" to="/home" />
     </Switch>
   </BrowserRouter>
 );
