@@ -1,9 +1,9 @@
 {
   "short_name": "Tek-O-thon",
-  "name": "Tek-O-thon hackathon",
+  "name": "Tek-O-thon",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
