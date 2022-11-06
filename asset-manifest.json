@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3798663f.css",
-    "main.js": "/static/js/main.c84b948c.js",
+    "main.js": "/static/js/main.f50939e1.js",
     "static/media/square-purple-1.png": "/static/media/square-purple-1.ed3a5e3801e35e68ab23.png",
     "static/media/schedule.jpg": "/static/media/schedule.a1f43bff416adc81523c.jpg",
     "static/media/guidelines.jpg": "/static/media/guidelines.c138a0c94a34de09f9ae.jpg",
@@ -23,6 +23,7 @@
     "static/media/gokul.jpg": "/static/media/gokul.cecc5de1e4cfbdc66105.jpg",
     "static/media/anna.jpg": "/static/media/anna.e16f95c73ba234f8a781.jpg",
     "static/media/mark-finn.jpg": "/static/media/mark-finn.40b788574c95a0ec347e.jpg",
+    "static/media/hari.jpg": "/static/media/hari.ece92f9f3fde0575790b.jpg",
     "static/media/ayyappan.jpg": "/static/media/ayyappan.8e88f8d3bac683afcfd6.jpg",
     "static/media/christy.jpg": "/static/media/christy.e305783def2fedfb15c2.jpg",
     "static/media/blob.png": "/static/media/blob.e39506780c69b0fd8920.png",
@@ -51,10 +52,10 @@
     "static/media/nucleo.woff2": "/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
     "index.html": "/index.html",
     "main.3798663f.css.map": "/static/css/main.3798663f.css.map",
-    "main.c84b948c.js.map": "/static/js/main.c84b948c.js.map"
+    "main.f50939e1.js.map": "/static/js/main.f50939e1.js.map"
   },
   "entrypoints": [
     "static/css/main.3798663f.css",
-    "static/js/main.c84b948c.js"
+    "static/js/main.f50939e1.js"
   ]
 }
