@@ -37,7 +37,7 @@ export default function Contact() {
               fontSize={"4rem"}
               sx={{ textAlign: "center" }}
             >
-              Contacts.
+              Contacts
             </Typography>
             <Stack direction={"column"}>
               {contactData.map((data, index) => (

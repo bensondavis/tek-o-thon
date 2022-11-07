@@ -6,22 +6,22 @@ export const contactData = [
   },
   {
     name: "Archana Sivadasan",
-    phone: "+91 80785 62186",
+    phone: "+91 807852186",
     role: "Event Head"
   },
   {
     name: "Aswin Santhosh",
-    phone: "+91 73062 66635",
+    phone: "+91 7306266635",
     role: "Event operation manager"
   },
   {
     name: "Harikrishnan M R",
-    phone: "+91 73062 53427",
+    phone: "+91 7306253427",
     role: "Event operation manager"
   },
   {
     name: "Aston Raju",
-    phone: "+91 95390 06281",
+    phone: "+91 8921578893",
     role: "Activities and Event Planner"
   }
 ];

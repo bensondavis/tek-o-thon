@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -11,35 +11,40 @@ import Association from "views/IndexSections/Association";
 import Basics from "views/IndexSections/Basics.js";
 import Themes from "views/IndexSections/Themes";
 import Prizes from "./IndexSections/Prizes";
-
-
+import Download from "./IndexSections/Download";
 
 export default function Index() {
-  React.useEffect(() => {
+  const [showAppbar, setShowAppbar] = useState(true);
+
+  useEffect(() => {
     document.body.classList.toggle("index-page");
-    // Specify how to clean up after this effect:
     return function cleanup() {
       document.body.classList.toggle("index-page");
     };
   }, []);
+
+  const handleHideAppbar = ()=> {
+    setShowAppbar(!showAppbar)
+  }
+
   return (
     <>
-      <IndexNavbar />
+     {showAppbar ? <IndexNavbar /> : null}
       <div className="wrapper">
         <PageHeader />
         <div className="main">
           <Basics />
           <Themes />
-          <Links />
+          <Links hideAppbar={handleHideAppbar} />
           {/* <Pagination /> */}
           {/* <Notifications /> */}
           {/* <Typography /> */}
           {/* <JavaScript /> */}
           {/* <NucleoIcons /> */}
-          <Prizes/>
+          <Prizes />
           <Association />
           {/* <Examples /> */}
-          {/* <Download /> */}
+          <Download />
         </div>
         <Footer />
       </div>

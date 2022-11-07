@@ -1,82 +1,25 @@
-import { Button, Container } from "reactstrap";
-import { CssVarsProvider } from "@mui/joy/styles";
-import { useState } from "react";
+import { Container } from "reactstrap";
 import ImageView from "./ImageView";
-import { Grid } from "@mui/joy";
+import { Stack } from "@mui/joy";
+import { imgData } from "./data/ImgData";
 
-function Schedule() {
-  const [openView, setOpenView] = useState(false);
-  const [imgType, setImgType] = useState("");
-
-  const handleOpenViewer = (val) => {
-    setOpenView(true);
-    switch (val) {
-      case 1:
-        setImgType("poster");
-        break;
-      case 2:
-        setImgType("guidelines");
-        break;
-      case 3:
-        setImgType("schedule");
-        break;
-      default:
-        break;
-    }
-  };
-
-  const handleViewerOnClose = (val) => {
-    setOpenView(val);
-  };
-
+function Links({ hideAppbar }) {
   return (
-    <div className=" section section-basic" id="basic-elements">   
+    <div className=" section section-basic" id="basic-elements">
       <Container style={{ textAlign: "center" }}>
-        <Grid
-          container
-          direction="row"
-          justifyContent="space-evenly"
-          alignItems="center"
-          style={{ maxHeigth: "90vh" }}
+        <Stack
+          direction={{xs: "column", sm:"row", md: "row"}}
+          spacing={{xs: 3, sm: 2, md: 4}}
+          alignItems={"center"}
+          justifyContent={"center"}
         >
-          <Grid item>
-            <Button
-              color="primary"
-              style={{ width: "10rem" }}
-              onClick={() => handleOpenViewer(1)}
-            >
-              Poster
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button
-              color="primary"
-              style={{ width: "10rem" }}
-              onClick={() => handleOpenViewer(2)}
-            >
-              Guidlines
-            </Button>
-          </Grid>
-          <Grid item>
-            <Button
-              color="primary"
-              style={{ width: "10rem" }}
-              onClick={() => handleOpenViewer(3)}
-            >
-              Schedule
-            </Button>
-          </Grid>
-        </Grid>
+          {imgData.map((data, index) => (
+            <ImageView img={data.img} title={data.title} hideAppbar={hideAppbar} key={index}/>
+          ))}
+        </Stack>
       </Container>
-      <CssVarsProvider>
-        <ImageView
-          imgType={imgType}
-          open={openView}
-          onClose={handleViewerOnClose}
-        />
-      </CssVarsProvider>
     </div>
   );
 }
 
-export default Schedule;
+export default Links;

@@ -1,57 +1,41 @@
-import { useEffect, useState } from "react";
-import { useColorScheme } from "@mui/joy/styles";
-import Modal from "@mui/joy/Modal";
-import ModalClose from "@mui/joy/ModalClose";
-import ModalDialog from "@mui/joy/ModalDialog";
-import poster from "../../assets/tot-img/poster.jpg";
-import schedule from "../../assets/tot-img/schedule.jpg";
-import guidelines from "../../assets/tot-img/guidelines.jpg";
+import { Typography } from "@mui/joy";
+import { ImageViewer } from "react-image-viewer-dv";
 
-export default function ImageView({ imgType, open, onClose }) {
-  const [currImg, setCurrImg] = useState("");
-  const { mode, setMode } = useColorScheme('dark');
-  useEffect(() => {
-
-    switch (imgType) {
-      case "poster":
-        setCurrImg(poster);
-        break;
-      case "guidelines":
-        setCurrImg(guidelines);
-        break;
-      case "schedule":
-        setCurrImg(schedule);
-        break;
-      default: break;
-    }
-  }, [imgType]);
-
-  const handleClose = () => {
-    onClose(false);
-  };
+export default function ImageView({ img, title, hideAppbar }) {
   return (
-      <Modal
-        open={open}
-        onClose={handleClose}
-        sx={{ maxWidth: "60vw", margin: "auto", zIndex: "10"}}
-        variant="soft"
+    <div
+      onClick={hideAppbar}
+      style={{
+        overflow: "hidden",
+        borderRadius: "25px",
+        position: "relative",
+        background:
+          "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
+      }}
+    >
+      <ImageViewer>
+        <img src={img} alt={"..."} width={200} />
+      </ImageViewer>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          // zIndex: 10,
+          background:
+            "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
+          pointerEvents: "none",
+        }}
       >
-        <ModalDialog
-          aria-labelledby="variant-modal-title"
-          aria-describedby="variant-modal-description"
+        <Typography
+          fontSize={"1.2rem"}
+          sx={{ color: "white", marginTop: "120%" }}
         >
-          <ModalClose
-            variant="outlined"
-            sx={{
-              top: "calc(-1/4 * var(--IconButton-size))",
-              right: "calc(-1/4 * var(--IconButton-size))",
-              boxShadow: "0 2px 12px 0 rgba(0 0 0 / 0.2)",
-              borderRadius: "50%",
-              bgcolor: "background.body",
-            }}
-          />
-            <img src={currImg} alt={"img"} />
-        </ModalDialog>
-      </Modal>
+          {title}
+        </Typography>
+      </div>
+    </div>
   );
 }

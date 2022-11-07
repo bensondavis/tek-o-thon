@@ -3,7 +3,6 @@ import React from "react";
 import { Row } from "reactstrap";
 import acesLogo from "./files/aces.png";
 import tekwizaLogo from "../../assets/img/tekwizalogow.png";
-// import Prizes from "./Prizes";
 
 export default function Signup() {
   return (
@@ -34,7 +33,6 @@ export default function Signup() {
           </Stack>
         </Stack>
       </Row>
-      {/* <Prizes/> */}
     </div>
   );
 }

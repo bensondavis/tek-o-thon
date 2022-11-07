@@ -12,25 +12,30 @@ export default function Download() {
       <Container>
         <Row className="justify-content-md-center">
           <Col className="text-center" lg="8" md="12">
-            <h2 className="title">
-              Do you love this Bootstrap 4 React Design System?
-            </h2>
-            <h4 className="description">
-              Cause if you do, it can be yours for FREE. Hit the button below to
-              navigate to Creative Tim where you can find the design system in
-              React format. Start a new project or give an old Bootstrap project
-              a new look!
+            <h2 className="title">Registration</h2>
+            <h4 className="description" style={{textAlign: "left"}}>
+              <b>Who can register -</b> Individuals who are at least 18 years of
+              age or older. <br />
+              <b>Registration criteria - </b> Team registration only(2-5
+              members)
+              <br />
+              <b>Registration period - </b> Till 21st November <br />
+              <b>Date of hackathon - </b> 25th November <br />
+              <b>Duration of hackathon - </b>24 hours Location:Sahrdaya College
+              of Engineering and Technology,Kodakara,Thrissur <br />
+              <b>Winners announced - </b>
+              On or around December 3, 2022
             </h4>
           </Col>
           <Col className="text-center" lg="8" md="12">
             <Button
               className="btn-round"
               color="info"
-              href="https://www.creative-tim.com/product/blk-design-system-react?ref=blkdsr-index-page-download-section"
+              href="https://forms.gle/Cv11dbYJrZXaPnTu6"
               role="button"
               size="lg"
             >
-              Download React
+              Register Now
             </Button>
           </Col>
         </Row>
@@ -44,46 +49,6 @@ export default function Download() {
             <h3 className="text-info font-weight-light mb-2">
               Thank you for supporting us!
             </h3>
-            <h4 className="mb-0 font-weight-light">
-              Let's get in touch on any of these platforms.
-            </h4>
-          </Col>
-          <Col className="text-lg-center btn-wrapper" lg="6">
-            <Button
-              className="btn-icon btn-round"
-              color="twitter"
-              id="twitter"
-              size="lg"
-            >
-              <i className="fab fa-twitter" />
-            </Button>
-            <UncontrolledTooltip delay={0} target="twitter">
-              Tweet!
-            </UncontrolledTooltip>
-            <Button
-              className="btn-icon btn-round"
-              color="facebook"
-              id="facebook"
-              size="lg"
-            >
-              <i className="fab fa-facebook-square" />
-            </Button>
-            <UncontrolledTooltip delay={0} target="facebook">
-              Share!
-            </UncontrolledTooltip>
-            <Button
-              className="btn-icon btn-round"
-              color="github"
-              href="https://github.com/creativetimofficial"
-              id="tooltip877922017"
-              size="lg"
-              target="_blank"
-            >
-              <i className="fab fa-github" />
-            </Button>
-            <UncontrolledTooltip delay={0} target="tooltip877922017">
-              Star on Github
-            </UncontrolledTooltip>
           </Col>
         </Row>
       </Container>

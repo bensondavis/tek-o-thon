@@ -13,7 +13,7 @@ export default function Team() {
       <Navbar />
       <div className="section">
         <Container>
-          <Typography fontSize={"2.5rem"} sx={{ textAlign: "center", color: "white", m:2 }}>
+          <Typography fontSize={"2.5rem"} fontWeight={550} sx={{ textAlign: "center", color: "white", m:2 }}>
             TEAM
           </Typography>
           <div

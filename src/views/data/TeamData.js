@@ -29,7 +29,7 @@ export const data = [
   {
     img: bensonImg,
     name: "Benson Davis",
-    role: "Core Team",
+    role: "Technical Manager",
   },
   {
     img: aswinImg,

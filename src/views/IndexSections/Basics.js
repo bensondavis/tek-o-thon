@@ -9,7 +9,7 @@ export default function Basics() {
     <div className="section section-basic" id="basic-elements">
       <img alt="..." className="path" src={require("assets/img/path1.png")} />
       <Container>
-        <h2 className="title">About Us?</h2>
+        <h2 className="title">About Us</h2>
         <h3>TEK-O-THON is a Hackathon conducted in association with
         TEKWIZA Techfest event to provide students with a platform
         to learn, grow and develop the technology of the future. Our

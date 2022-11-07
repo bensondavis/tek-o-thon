@@ -2,6 +2,7 @@ import { Stack } from "@mui/system";
 import PrizesSingle from "./PrizesSingle";
 import { prizeData } from "./PrizeData";
 import { Container } from "reactstrap";
+import { Typography } from "@mui/joy";
 // import Association from "./Association"
 
 export default function Prizes() {
@@ -13,6 +14,7 @@ export default function Prizes() {
       <div className="squares square-3" />
       <div className="squares square-4" />  */}
       <Container>
+      <Typography fontSize={"3rem"} fontWeight={550} sx={{textAlign:"center", color: "white"}}>Prizes</Typography>
       <Stack
         direction={{ xs: "column", sm: "column", md: "row" }}
         justifyContent="center"

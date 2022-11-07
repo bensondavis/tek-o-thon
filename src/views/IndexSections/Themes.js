@@ -10,8 +10,14 @@ export default function Navbars() {
       <Container id="menu-dropdown">
         <h2 className="title">Focus</h2>
         <h3>
-          Tek-O-thon tend to have a specific focus with problem statements such
-          as Healthcare, Waste Management, Smart Education, etc.
+          The goal of this hackathon is to create functioning software or
+          hardware by the end of the event.The aim is to generate prototypes
+          that simplify the solutions of real world problems like
+          healthcare,smart education,waste management or based on sponsers
+          theme. This code fest does not restrict the use of computer languages
+          such as Python, Java, Javascript, or any other programming language,
+          nor does it restrict the use of operating systems or other
+          technologies to develop remedies drew on creative thinking.
         </h3>
       </Container>
       <br />
