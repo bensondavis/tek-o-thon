@@ -1,6 +1,6 @@
 export const data = [
   {
-    date: "5 Nov 2022",
+    date: "6 Nov 2022",
     title: "Registration starts",
     description: "",
   },
