@@ -499,3 +499,11 @@ body::-webkit-scrollbar-thumb {
   background-color: grey;  
   border-radius: 20px;     
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.to-front{
+  z-index: 2;
+}

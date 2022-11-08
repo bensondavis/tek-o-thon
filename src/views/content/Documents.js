@@ -22,10 +22,7 @@ export default function Documents() {
   return (
     <>
       {showAppbar ? <Appbar /> : null}
-      <div
-        className="page-header header-filter"
-        style={{ position: "relative" }}
-      >
+      <div className=" section section-tabs" style={{maxWidth: "100vw"}}>
         <div className="squares square1" />
         <div className="squares square2" />
         <div className="squares square3" />
@@ -33,26 +30,18 @@ export default function Documents() {
         <div className="squares square5" />
         <div className="squares square6" />
         <div className="squares square7" />
-      </div>
-      <Container>
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            marginBottom: "350px",
-          }}
-        >
+        <Container>
           <Typography
             fontSize={"3rem"}
             fontWeight={550}
             sx={{
               color: "#d1d1d1",
               textAlign: "center",
-              marginTop: "100px",
+              marginBottom: "40px",
+              marginTop: "30px",
               userSelect: "none",
+              position: "relative",
+              zIndex: 2
             }}
           >
             Documents
@@ -60,18 +49,12 @@ export default function Documents() {
           <Stack
             direction={{ xs: "column", sm: "column", md: "row" }}
             justifyContent={"center"}
-            sx={{ zIndex: 1 }}
+            sx={{ marginTop: "-50px" }}
           >
             <Links hideAppbar={handleHideAppbar} />
           </Stack>
-        </div>
-        <div
-          className="section section-basic"
-          id="basic-elements"
-          style={{ height: "320px" }}
-        ></div>
-      </Container>
-
+        </Container>
+      </div>
       <Footer />
     </>
   );
