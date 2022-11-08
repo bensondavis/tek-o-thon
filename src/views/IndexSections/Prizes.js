@@ -8,7 +8,7 @@ export default function Prizes() {
   return (
     <div className="section section-signup">
       <Container>
-      <Typography fontSize={"3rem"} fontWeight={550} sx={{textAlign:"center", color: "white"}}>Prizes</Typography>
+      <Typography fontSize={"3rem"} fontWeight={550} sx={{textAlign:"center", color: "#d1d1d1"}}>Prizes</Typography>
       <Stack
         direction={{ xs: "column", sm: "column", md: "row" }}
         justifyContent="center"

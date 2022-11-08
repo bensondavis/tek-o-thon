@@ -133,6 +133,14 @@ export default function IndexNavbar() {
                   <i className="fa-solid fa-medal"></i>
                   Winners
                 </DropdownItem>
+                <DropdownItem
+                  tag={Link}
+                  to="/documents"
+                  onClick={scrollToTop}
+                >
+                  <i className="fa-solid fa-file"></i>
+                  Documents
+                </DropdownItem>
                 <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
                   <i className="fa-solid fa-coins"></i>
                   Sponsors

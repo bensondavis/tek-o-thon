@@ -14,6 +14,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fontsource/anton": "^4.5.9",
+    "@fontsource/russo-one": "^4.5.10",
     "@mui/joy": "^5.0.0-alpha.52",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",

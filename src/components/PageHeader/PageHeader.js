@@ -2,6 +2,7 @@ import React from "react";
 import logo from "../../assets/img/tot-logo.png";
 import { Container } from "reactstrap";
 import { Stack, Typography } from "@mui/joy";
+import "@fontsource/russo-one"
 
 export default function PageHeader() {
   return (
@@ -21,10 +22,8 @@ export default function PageHeader() {
         sx={{ minHeight: "100%"}}
         >
             <img src={logo} width={280} />
-            <Typography variant="h1" fontSize={"3rem"} className={"title"}>TEK-O-THON</Typography>
-            {/* <h1 className="h1-seo">Tek-O-thon</h1> */}
+            <Typography fontSize={"3rem"} fontWeight={550} sx={{color: "white"}} fontFamily={"Russo One"} >TEK-O-THON</Typography>
             <Typography variant="h4" className={"title"} >THINK • CODE • INNOVATE</Typography>
-            {/* <h3 className="d-none d-sm-block">THINK • CODE • INNOVATE</h3> */}
         </Stack>
       </Container>
     </div>

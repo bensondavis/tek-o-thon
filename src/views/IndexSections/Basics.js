@@ -1,3 +1,4 @@
+import { Typography } from "@mui/joy";
 import React from "react";
 
 import {
@@ -9,7 +10,9 @@ export default function Basics() {
     <div className="section section-basic" id="basic-elements">
       <img alt="..." className="path" src={require("assets/img/path1.png")} />
       <Container>
-        <h2 className="title">About Us</h2>
+        
+        <Typography fontSize={"3rem"} fontWeight={550} sx={{color: "#d1d1d1", textAlign: "center", marginBottom: "40px"}}>About Us</Typography>
+        {/* <h2 className="title">About Us</h2> */}
         <h3>TEK-O-THON is a Hackathon conducted in association with
         TEKWIZA Techfest event to provide students with a platform
         to learn, grow and develop the technology of the future. Our
@@ -21,6 +24,7 @@ export default function Basics() {
         platform for them.
         </h3>
       </Container>
+      
     </div>
   );
 }

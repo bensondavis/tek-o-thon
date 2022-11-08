@@ -6,7 +6,7 @@ import PageHeader from "components/PageHeader/PageHeader.js";
 import Footer from "components/Footer/Footer.js";
 
 // sections for this page/view
-import Links from "views/IndexSections/Links";
+// import Links from "views/IndexSections/Links";
 import Association from "views/IndexSections/Association";
 import Basics from "views/IndexSections/Basics.js";
 import Themes from "views/IndexSections/Themes";
@@ -36,7 +36,7 @@ export default function Index() {
         <div className="main">
           <Basics />
           <Themes />
-          <Links hideAppbar={handleHideAppbar} />
+          {/* <Links hideAppbar={handleHideAppbar} /> */}
           {/* <Pagination /> */}
           {/* <Notifications /> */}
           {/* <Typography /> */}
