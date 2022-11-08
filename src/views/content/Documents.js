@@ -34,24 +34,42 @@ export default function Documents() {
         <div className="squares square6" />
         <div className="squares square7" />
       </div>
-      <Container >
-      <div style={{position: "absolute", top: 0, left: 0, width:"100%", height: "100%", marginBottom: "350px"}}>
-        <Typography
-          fontSize={"3rem"}
-          fontWeight={550}
-          sx={{ color: "#d1d1d1", textAlign: "center", marginTop: "100px" }}
+      <Container>
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            marginBottom: "350px",
+          }}
         >
-          Documents
-        </Typography>
-        <Stack
-          direction={{ xs: "column", sm: "column", md: "row" }}
-          justifyContent={"center"}
-          sx={{zIndex: 1}}
-        >
-          <Links hideAppbar={handleHideAppbar} />
-        </Stack>
-      </div>
-      <div className="section section-basic" id="basic-elements" style={{height:"320px"}}></div>
+          <Typography
+            fontSize={"3rem"}
+            fontWeight={550}
+            sx={{
+              color: "#d1d1d1",
+              textAlign: "center",
+              marginTop: "100px",
+              userSelect: "none",
+            }}
+          >
+            Documents
+          </Typography>
+          <Stack
+            direction={{ xs: "column", sm: "column", md: "row" }}
+            justifyContent={"center"}
+            sx={{ zIndex: 1 }}
+          >
+            <Links hideAppbar={handleHideAppbar} />
+          </Stack>
+        </div>
+        <div
+          className="section section-basic"
+          id="basic-elements"
+          style={{ height: "320px" }}
+        ></div>
       </Container>
 
       <Footer />

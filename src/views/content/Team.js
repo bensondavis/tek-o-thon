@@ -13,7 +13,11 @@ export default function Team() {
       <Navbar />
       <div className="section">
         <Container>
-          <Typography fontSize={"2.5rem"} fontWeight={550} sx={{ textAlign: "center", color: "white", m:2 }}>
+          <Typography
+            fontSize={"3rem"}
+            fontWeight={550}
+            sx={{ textAlign: "center", color: "#d1d1d1", m: 2, userSelect: "none" }}
+          >
             TEAM
           </Typography>
           <div
@@ -26,7 +30,7 @@ export default function Team() {
             <Grid
               container
               justifyContent="center"
-              spacing={{xs:2, sm: 3, md: 4}}
+              spacing={{ xs: 2, sm: 3, md: 4 }}
             >
               {data.map((dat, index) => (
                 <Grid item key={index}>

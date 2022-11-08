@@ -40,7 +40,7 @@ export default function Navbars() {
         <Typography
           fontSize={"3rem"}
           fontWeight={550}
-          sx={{ color: "#d1d1d1", textAlign: "center" }}
+          sx={{ color: "#d1d1d1", textAlign: "center" ,userSelect: "none"}}
         >
           Themes
         </Typography>
@@ -51,24 +51,12 @@ export default function Navbars() {
           direction={{ xs: "column", sm: "column", md: "row" }}
           alignItems={"center"}
           justifyContent={"center"}
-          spacing={{ xs: 1, sm: 1, md: 15 }}
+          spacing={{ xs: 1, sm: 1, md: 15, ":hover":"{color: red;}" }}
         >
           {themeData.map((data, index) => (
             <ThemeIcons img={data.img} title={data.title} key={index} />
           ))}
         </Stack>
-
-        {/* <div style={{position: "relative", minHeight: "200px"}}>
-          <img src={wasteImg} width={100} />
-          <Typography
-          fontSize={"1.9rem"}
-          fontFamily={"anton"}
-          fontWeight={400}
-          style={{position: "absolute", top: 61, left: 45, color:"#d1d1d1"}}
-        >
-          Waste Management
-        </Typography>
-        </div> */}
       </Container>
     </div>
   );

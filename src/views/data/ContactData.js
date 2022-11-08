@@ -6,7 +6,7 @@ export const contactData = [
   },
   {
     name: "Archana Sivadasan",
-    phone: "+91 807852186",
+    phone: "+91 8078562186",
     role: "Event Head"
   },
   {

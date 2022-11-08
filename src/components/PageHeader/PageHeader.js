@@ -21,7 +21,7 @@ export default function PageHeader() {
         alignItems="center"
         sx={{ minHeight: "100%"}}
         >
-            <img src={logo} width={280} />
+            <img src={logo} width={280} alt={"logo"} />
             <Typography fontSize={"3rem"} fontWeight={550} sx={{color: "white"}} fontFamily={"Russo One"} >TEK-O-THON</Typography>
             <Typography variant="h4" className={"title"} >THINK • CODE • INNOVATE</Typography>
         </Stack>

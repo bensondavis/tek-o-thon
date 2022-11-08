@@ -69,7 +69,7 @@ export default function IndexNavbar() {
             id="navbar-brand"
             onClick={scrollToTop}
           >
-            <img src={logo} width={23} />
+            <img src={logo} width={23} alt={"logo"} />
             <span> TEK-O-THON</span>
           </NavbarBrand>
           <button
@@ -140,7 +140,7 @@ export default function IndexNavbar() {
                   <i className="fa-solid fa-file"></i>
                   Documents
                 </DropdownItem>
-                <DropdownItem tag={Link} to="/" onClick={scrollToTop}>
+                <DropdownItem tag={Link} to="/sponsors" onClick={scrollToTop}>
                   <i className="fa-solid fa-coins"></i>
                   Sponsors
                 </DropdownItem>

@@ -22,7 +22,7 @@ export const data = [
   },
   {
     img: sundar,
-    name: "Sundar",
+    name: "Sundar R",
     role: "Faculty",
   },
   {
@@ -85,5 +85,4 @@ export const data = [
     name: "Amal Yousaf",
     role: "Sponsorship Coordinator",
   },
-  
 ];

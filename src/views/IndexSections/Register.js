@@ -2,6 +2,8 @@ import { Stack, Typography } from "@mui/joy";
 import React from "react";
 import { Button, Container } from "reactstrap";
 import cover from "../../assets/tot-img/cover.jpg";
+import vote from "../../assets/icons/vote.png";
+import members from "../../assets/icons/members.png";
 
 export default function Download() {
   return (
@@ -29,18 +31,20 @@ export default function Download() {
           <div style={{ maxWidth: 500 }}>
             <Typography fontSize={"1rem"} sx={{color:"#d1d1d1"}}>
               {" "}
-              👾 Get on to your hacking chairs 🤖 Unleash your inner geek for a
+              {/* 👾 Get on to your hacking chairs 🤖 Unleash your inner geek for a
               extravagant techie experience 👾 <br /> <br />
-              ACES SAHRDAYA presents TEK-O-THON A pre-event in TEKWIZA 2k22
-              <br />
-              <br />
-              <span>
+              ACES SAHRDAYA presents TEK-O-THON A pre-event in TEKWIZA 2k22 */}
+              <span><img src={vote} width={20} alt={"eligibility"} /></span>Eligibility: Higher Secondary, BTech, MTech & BSC Students
+              <br /><br />
+              <span><img src={members} width={20} alt={"members"}/></span> Should consist of 2-5 Members
+              <br /><br />
+              <span style={{color: "white"}}>
                 <i className="fa-regular fa-calendar"></i>
               </span>{" "}
               25 & 26 November 2022
-              <br /># 24HourHackathon
-              <br />
-              <span>
+              <br /><br /><span style={{color: "white"}}>#</span> 24HourHackathon
+              <br /><br />
+              <span style={{color: "white"}}>
                 <i className="fa-solid fa-location-dot"></i>
               </span>{" "}
               Sahrdaya College of Engineering and Technology, Kodakara
@@ -61,6 +65,7 @@ export default function Download() {
                 href="https://forms.gle/Cv11dbYJrZXaPnTu6"
                 // role="button"
                 size="lg"
+                style={{marginTop: "-1px"}}
               >
                 Register Now
               </Button>

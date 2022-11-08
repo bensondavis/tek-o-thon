@@ -29,17 +29,17 @@ export default function Contact() {
             direction={"column"}
             justifyContent="center"
             alignItems="center"
-            sx={{minHeight: "100%"}}
+            sx={{ marginTop: "10vh" }}
+            spacing={1}
           >
             <Typography
-              variant="h1"
               fontWeight={600}
-              fontSize={"4rem"}
+              fontSize={"3rem"}
               sx={{ textAlign: "center" }}
             >
               Contacts
             </Typography>
-            <Stack direction={"column"}>
+            <Stack direction={"column"} spacing={4}>
               {contactData.map((data, index) => (
                 <ContactSingle
                   name={data.name}
@@ -51,7 +51,7 @@ export default function Contact() {
             </Stack>
           </Stack>
         </Container>
-      </div>    
+      </div>
       <Footer />
     </>
   );

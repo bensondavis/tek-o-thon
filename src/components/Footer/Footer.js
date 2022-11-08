@@ -26,7 +26,7 @@ export default function Footer() {
       <Container>
         <Row>
           <Col md="3" style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
-            <img src={logo} width={150} height={150}/>
+            <img src={logo} width={150} height={150} alt={"logo"}/>
             <h1 style={{fontWeight: "bold"}}>{title}</h1>
           </Col>
           <Col md="3">
@@ -37,8 +37,28 @@ export default function Footer() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink to="/Schedule" tag={Link} onClick={scrollToTop}>
+                <NavLink to="/schedule" tag={Link} onClick={scrollToTop}>
                   Schedule
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/winners" tag={Link} onClick={scrollToTop}>
+                  Winners
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink to="/documents" tag={Link} onClick={scrollToTop}>
+                  Documents
+                </NavLink>
+              </NavItem>
+              
+            </Nav>
+          </Col>
+          <Col md="3">
+            <Nav>
+            <NavItem>
+                <NavLink to="/sponsors" tag={Link} onClick={scrollToTop}>
+                  Sponsorship
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -46,18 +66,9 @@ export default function Footer() {
                   Team
                 </NavLink>
               </NavItem>
-            </Nav>
-          </Col>
-          <Col md="3">
-            <Nav>
               <NavItem>
                 <NavLink to="/contact" tag={Link} onClick={scrollToTop}>
                   Contact Us
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/team" tag={Link} onClick={scrollToTop}>
-                  About Us
                 </NavLink>
               </NavItem>
             </Nav>

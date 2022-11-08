@@ -28,6 +28,7 @@ export default function SchedulePage() {
               textAlign: "center",
               marginBottom: "40px",
               marginTop: "30px",
+              userSelect: "none"
             }}
           >
             Schedule

@@ -5,7 +5,7 @@ import Link from "@mui/joy/Link";
 
 export default function ContactSingle({ name, phone, role }) {
   return (
-    <Box sx={{ maxWidth: "100vw", mt: 3 }}>
+    <Box sx={{ maxWidth: "100vw" }}>
       <Stack
         direction={"row"}
         spacing={{ xs: 1, sm: 3, md: 4 }}
@@ -15,6 +15,7 @@ export default function ContactSingle({ name, phone, role }) {
           level="h1"
           textTransform="uppercase"
           fontWeight="xl"
+          fontSize={"1.4rem"}
           mb={1}
           sx={{ letterSpacing: "0.15rem" }}
         >
@@ -25,6 +26,7 @@ export default function ContactSingle({ name, phone, role }) {
           textTransform="uppercase"
           fontWeight="xl"
           mb={1}
+          fontSize={"1.4rem"}
           sx={{ letterSpacing: "0.15rem" }}
         >
           <Link
