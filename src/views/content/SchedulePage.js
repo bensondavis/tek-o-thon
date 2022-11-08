@@ -5,6 +5,7 @@ import "../../assets/css/Schedule.css";
 import Schedulesingle from "./SheduleSingle";
 import { data } from "../data/Scheduledata";
 import { Container } from "reactstrap";
+import { Typography } from "@mui/joy";
 
 export default function SchedulePage() {
   React.useEffect(() => {
@@ -19,12 +20,18 @@ export default function SchedulePage() {
       <AppNavbar />
       <div className=" section section-tabs">
         <Container>
-          <h1
-            className="title"
-            style={{ marginTop: "50px", marginBottom: "50px", textAlign:"center"}}
+          <Typography
+            fontSize={"3rem"}
+            fontWeight={550}
+            sx={{
+              color: "#d1d1d1",
+              textAlign: "center",
+              marginBottom: "40px",
+              marginTop: "30px",
+            }}
           >
             Schedule
-          </h1>
+          </Typography>
           <div className="dashboard_schedule_inner_wrapper" id="schedule">
             {data.map((dat, index) => (
               <Schedulesingle
@@ -38,6 +45,7 @@ export default function SchedulePage() {
               />
             ))}
           </div>
+
           <section className="section"></section>
         </Container>
       </div>
