@@ -30,11 +30,7 @@ export default function Download() {
           <img src={cover} alt={"cover"} width={500} />
           <div style={{ maxWidth: 500 }}>
             <Typography fontSize={"1rem"} sx={{color:"#d1d1d1"}}>
-              {" "}
-              {/* 👾 Get on to your hacking chairs 🤖 Unleash your inner geek for a
-              extravagant techie experience 👾 <br /> <br />
-              ACES SAHRDAYA presents TEK-O-THON A pre-event in TEKWIZA 2k22 */}
-              <span><img src={vote} width={20} alt={"eligibility"} /></span>Eligibility: Higher Secondary, BTech, MTech & BSC Students
+              <span><img src={vote} width={20} alt={"eligibility"} /></span>Eligibility: Bachelors, Masters and related courses within computer science and allied branches
               <br /><br />
               <span><img src={members} width={20} alt={"members"}/></span> Should consist of 2-5 Members
               <br /><br />

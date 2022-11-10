@@ -13,32 +13,16 @@ import hod from "../../assets/team/satheesh-sir.jpeg";
 import sundar from "../../assets/team/sundar-sir.jpeg";
 import manishankar from "../../assets/team/manishankar-sir.jpg";
 
-
-export const data = [
-  {
-    img: hod,
-    name: "Dr. R Satheesh Kumar",
-    role: "HOD",
-  },
-  {
-    img: sundar,
-    name: "Sundar R",
-    role: "Faculty",
-  },
-  {
-    img: manishankar,
-    name: "Manishankar",
-    role: "Faculty",
-  },
+const teamData = [
   {
     img: gokulImg,
     name: "Gokul Gopinath",
-    role: "Event Head",
+    role: "Lead Organizer",
   },
   {
     img: archanaImg,
     name: "Archana Sivadasan",
-    role: "Event Head",
+    role: "Lead Organizer",
   },
   {
     img: aswinImg,
@@ -86,3 +70,24 @@ export const data = [
     role: "Sponsorship Coordinator",
   },
 ];
+
+
+const facultyData = [
+  {
+    img: hod,
+    name: "Dr. R Satheesh Kumar",
+    role: "HOD",
+  },
+  {
+    img: sundar,
+    name: "Sundar R",
+    role: "Faculty",
+  },
+  {
+    img: manishankar,
+    name: "Dr. Manishankar",
+    role: "Faculty",
+  },
+];
+
+export {teamData, facultyData};

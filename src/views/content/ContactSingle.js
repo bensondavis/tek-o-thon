@@ -3,44 +3,67 @@ import { Stack } from "@mui/joy";
 import Box from "@mui/joy/Box";
 import Link from "@mui/joy/Link";
 
-export default function ContactSingle({ name, phone, role }) {
+export default function ContactSingle({ name, phone, role, email }) {
   return (
-    <Box sx={{ maxWidth: "100vw" }}>
-      <Stack
-        direction={"row"}
-        spacing={{ xs: 1, sm: 3, md: 4 }}
-        justifyContent="space-between"
-      >
+    <Stack
+      direction={{ xs: "column", sm: "row", md: "row" }}
+      justifyContent={"space-between"}
+      sx={{
+        maxHeight: "100px",
+        maxWidth: "90vw",
+        minWidth: "60vw",
+        position: "relative",
+        zIndex: "3",
+      }}
+    >
+      <Stack direction={"column"}>
         <Typography
-          level="h1"
           textTransform="uppercase"
-          fontWeight="xl"
+          fontWeight={550}
           fontSize={"1.4rem"}
           mb={1}
-          sx={{ letterSpacing: "0.15rem" }}
+          sx={{ color: "#d1d1d1", letterSpacing: "0.1rem" }}
         >
           {name}
         </Typography>
-
+        <Typography sx={{ mt: -1, color: "#fff8" }}>{role}</Typography>
+      </Stack>
+      {phone ? (
         <Typography
           textTransform="uppercase"
-          fontWeight="xl"
+          // fontWeight="xl"
           mb={1}
           fontSize={"1.4rem"}
-          sx={{ letterSpacing: "0.15rem" }}
+          sx={{ color: "#d1d1d1", letterSpacing: "0.1rem", marginLeft: "auto" }}
         >
           <Link
             href={"tel:" + phone}
             underline="none"
             color="neutral"
             variant="plain"
-            level="h3"
           >
             {phone}
           </Link>
         </Typography>
-      </Stack>
-      <Typography sx={{ mt: -1 }}>{role}</Typography>
-    </Box>
+      ) : null}
+      {email ? (
+        <Typography
+          textTransform="lowercase"
+          mb={1}
+          fontSize={"1.3rem"}
+          sx={{ color: "#d1d1d1", letterSpacing: "0rem", marginLeft: "auto" }}
+        >
+          <Link
+            href={"mailto:" + email}
+            underline="none"
+            color="neutral"
+            variant="plain"
+            level="h3"
+          >
+            {email}
+          </Link>
+        </Typography>
+      ) : null}
+    </Stack>
   );
 }

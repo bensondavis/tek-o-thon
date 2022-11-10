@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* BLK Design System React - v1.2.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/blk-design-system-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/blk-design-system-react/blob/main/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-/*     brand Colors              */
 /* navbar color */
 @keyframes move-left-right {
   0% {
@@ -7995,7 +7977,7 @@ button.bg-darker:focus {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1020;
 }
 
 .fixed-bottom {
@@ -8003,7 +7985,7 @@ button.bg-darker:focus {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 1020;
 }
 
 @supports (position: sticky) {
@@ -24066,11 +24048,11 @@ td.rdtYear:hover {
 .register-page .square,
 .section.section-signup .squares,
 .section.section-signup .square {
-  background: #ba54f5;
-  background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: #ba54f5; 
+   background: -webkit-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
   background: -o-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
   background: -moz-linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
-  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%);
+  background: linear-gradient(0deg, #ba54f5 0%, #e14eca 100%); 
 }
 
 .footer {

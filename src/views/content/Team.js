@@ -2,48 +2,68 @@ import Navbar from "components/Navbars/IndexNavbar.js";
 import Footer from "components/Footer/Footer.js";
 import React from "react";
 import TeamCard from "./ProfileCard";
-import { data } from "../data/TeamData";
+import { teamData, facultyData } from "../data/TeamData";
 import { Grid } from "@mui/joy";
 import { Typography } from "@mui/joy";
 import { Container } from "reactstrap";
+import { useEffect } from "react";
 
 export default function Team() {
+  useEffect(() => {
+    document.body.classList.toggle("index-page");
+    return function cleanup() {
+      document.body.classList.toggle("index-page");
+    };
+  }, []);
   return (
     <>
       <Navbar />
-      <div className="section">
+      <div className="section section-signup">
         <Container>
           <Typography
             fontSize={"3rem"}
             fontWeight={550}
-            sx={{ textAlign: "center", color: "#d1d1d1", m: 2, userSelect: "none" }}
+            sx={{
+              textAlign: "center",
+              color: "#d1d1d1",
+              m: 2,
+              userSelect: "none",
+            }}
           >
             TEAM
           </Typography>
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
+          <Grid
+            container
+            justifyContent="center"
+            spacing={{ xs: 2, sm: 3, md: 4 }}
           >
-            <Grid
-              container
-              justifyContent="center"
-              spacing={{ xs: 2, sm: 3, md: 4 }}
-            >
-              {data.map((dat, index) => (
-                <Grid item key={index}>
-                  <TeamCard
-                    img={dat.img}
-                    name={dat.name}
-                    role={dat.role}
-                    key={index}
-                  />
-                </Grid>
-              ))}
-            </Grid>
-          </div>
+            {facultyData.map((dat, index) => (
+              <Grid item key={index}>
+                <TeamCard
+                  img={dat.img}
+                  name={dat.name}
+                  role={dat.role}
+                  key={index}
+                />
+              </Grid>
+            ))}
+          </Grid>
+          <Grid
+            container
+            justifyContent="center"
+            spacing={{ xs: 2, sm: 3, md: 4 }}
+          >
+            {teamData.map((data, index) => (
+              <Grid item key={index}>
+                <TeamCard
+                  img={data.img}
+                  name={data.name}
+                  role={data.role}
+                  key={index}
+                />
+              </Grid>
+            ))}
+          </Grid>
         </Container>
       </div>
 

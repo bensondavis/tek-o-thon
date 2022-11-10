@@ -504,6 +504,10 @@ body {
   overflow-x: hidden;
 }
 
+html, body {
+  position: relative;
+}
+
 .to-front{
   z-index: 2;
 }

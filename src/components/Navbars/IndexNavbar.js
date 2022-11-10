@@ -60,7 +60,7 @@ export default function IndexNavbar() {
     });
   };
   return (
-    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
+    <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg" >
       <Container>
         <div className="navbar-translate">
           <NavbarBrand

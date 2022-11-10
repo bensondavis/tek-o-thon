@@ -2,12 +2,12 @@ export const contactData = [
   {
     name: "Gokul Gopinath",
     phone: "+91 9961899106",
-    role: "Event Head"
+    role: "Lead Organizer"
   },
   {
     name: "Archana Sivadasan",
     phone: "+91 8078562186",
-    role: "Event Head"
+    role: "Lead Organizer"
   },
   {
     name: "Aswin Santhosh",
@@ -23,5 +23,10 @@ export const contactData = [
     name: "Aston Raju",
     phone: "+91 8921578893",
     role: "Activities and Event Planner"
+  },
+  {
+    name: "Email",
+    email: "tekothonsahrdaya@gmail.com",
+    role: "For queries"
   }
 ];

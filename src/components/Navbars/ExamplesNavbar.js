@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useHistory} from "react-router-dom";
+import { Link} from "react-router-dom";
 import {
   Button,
   Collapse,
@@ -18,7 +18,6 @@ export default function ExamplesNavbar() {
   const [collapseOpen, setCollapseOpen] = React.useState(false);
   const [collapseOut, setCollapseOut] = React.useState("");
   const [color, setColor] = React.useState("navbar-transparent");
-  const history = useHistory();
 
   React.useEffect(() => {
     window.addEventListener("scroll", changeColor);
