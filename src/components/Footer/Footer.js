@@ -79,7 +79,7 @@ export default function Footer() {
               <Button
                 className="btn-icon btn-neutral btn-round btn-simple"
                 color="default"
-                href="https://discord.gg/BNQ8feJM"
+                href="https://discord.gg/FsStcFtTU9"
                 id="tooltip622135962"
                 target="_blank"
               >

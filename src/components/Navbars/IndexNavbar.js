@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
+import rocket from "../../assets/icons/rocket.png";
 import {
   Button,
   Collapse,
@@ -162,10 +163,11 @@ export default function IndexNavbar() {
                 href="https://forms.gle/Cv11dbYJrZXaPnTu6"
                 style={{ minWidth: "100px", textAlign: "center" }}
               >
-                <i
+                {/* <i
                   className="tim-icons icon-spaceship"
                   style={{ marginLeft: "8px" }}
-                />
+                /> */}
+                <img src={rocket} width={23} />
                 Register
               </Button>
             </NavItem>
@@ -184,7 +186,7 @@ export default function IndexNavbar() {
             <NavItem className="p-0 d-none d-lg-block">
               <NavLink
                 data-placement="bottom"
-                href="https://discord.gg/BNQ8feJM"
+                href="https://discord.gg/FsStcFtTU9"
                 rel="noopener noreferrer"
                 target="_blank"
                 title="Follow us on Discord"
