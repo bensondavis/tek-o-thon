@@ -32,41 +32,39 @@ export default function SponsorSingle({
   };
 
   return (
-    <>
-      <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
-        <Box sx={style}>
-          <img src={img} width={"80%"} alt={"logo"} />
-        </Box>
-        <Collapse in={hover}>
-          <Stack direction={"row"} alignItems="center" justifyContent="center">
-            {link ? (
-                <IconButton href={link} sx={{ color: "white" }}>
-                  <LaunchIcon />
-                </IconButton>
-            ) : null}
-            {twitter ? (
-              <IconButton href={twitter} sx={{ color: "white" }}>
-                <TwitterIcon />
-              </IconButton>
-            ) : null}
-            {fb ? (
-              <IconButton href={fb} sx={{ color: "white" }}>
-                <FacebookIcon />
-              </IconButton>
-            ) : null}
-            {insta ? (
-              <IconButton href={insta} sx={{ color: "white" }}>
-                <InstagramIcon />
-              </IconButton>
-            ) : null}
-            {linkedin ? (
-              <IconButton href={linkedin} sx={{ color: "white" }}>
-                <LinkedInIcon />
-              </IconButton>
-            ) : null}
-          </Stack>
-        </Collapse>
-      </div>
-    </>
+    <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
+      <Box sx={style}>
+        <img src={img} width={"80%"} alt={"logo"} />
+      </Box>
+      <Collapse in={hover}>
+        <Stack direction={"row"} alignItems="center" justifyContent="center">
+          {link ? (
+            <IconButton href={link} sx={{ color: "white" }}>
+              <LaunchIcon />
+            </IconButton>
+          ) : null}
+          {twitter ? (
+            <IconButton href={twitter} sx={{ color: "white" }}>
+              <TwitterIcon />
+            </IconButton>
+          ) : null}
+          {fb ? (
+            <IconButton href={fb} sx={{ color: "white" }}>
+              <FacebookIcon />
+            </IconButton>
+          ) : null}
+          {insta ? (
+            <IconButton href={insta} sx={{ color: "white" }}>
+              <InstagramIcon />
+            </IconButton>
+          ) : null}
+          {linkedin ? (
+            <IconButton href={linkedin} sx={{ color: "white" }}>
+              <LinkedInIcon />
+            </IconButton>
+          ) : null}
+        </Stack>
+      </Collapse>
+    </div>
   );
 }

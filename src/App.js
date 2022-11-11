@@ -10,7 +10,6 @@ import Winner from "views/content/Winner";
 import Contact from "views/content/Contact";
 import Documents from "views/content/Documents";
 import Sponsor from "views/content/Sponsor";
-import RegisterPage from "views/content/RegisterPage";
 
 export default function App() {
   return (
@@ -24,10 +23,6 @@ export default function App() {
         <Route
           path={"/documents"}
           render={(props) => <Documents {...props} />}
-        />
-        <Route
-          path={"/register"}
-          render={(props) => <RegisterPage {...props} />}
         />
         <Route path={"/sponsors"} render={(props) => <Sponsor {...props} />} />
         <Route path={"/winners"} render={(props) => <Winner {...props} />} />
