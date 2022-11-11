@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/material";
 import React from "react";
 import { Button, Container } from "reactstrap";
 import cover from "../../assets/tot-img/cover.jpg";

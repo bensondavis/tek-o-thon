@@ -1,6 +1,6 @@
 import AppBar from "../../components/Navbars/IndexNavbar";
 import Footer from "../../components/Footer/Footer";
-import { Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/material";
 import { contactData } from "views/data/ContactData";
 import { useEffect } from "react";
 import ContactSingle from "./ContactSingle";

@@ -1,4 +1,4 @@
-import { Typography } from "@mui/joy";
+import { Typography } from "@mui/material";
 import { ImageViewer } from "react-image-viewer-dv";
 
 export default function ImageView({ img, title, hideAppbar }) {

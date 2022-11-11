@@ -5,7 +5,7 @@ import "../../assets/css/Schedule.css";
 import Schedulesingle from "./SheduleSingle";
 import { data } from "../data/Scheduledata";
 import { Container } from "reactstrap";
-import { Typography } from "@mui/joy";
+import { Typography } from "@mui/material";
 
 export default function SchedulePage() {
   React.useEffect(() => {

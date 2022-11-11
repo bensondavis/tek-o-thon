@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../assets/img/tot-logo.png";
 import { Container } from "reactstrap";
-import { Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/material";
 import "@fontsource/russo-one";
 
 export default function PageHeader() {

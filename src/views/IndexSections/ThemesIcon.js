@@ -1,4 +1,4 @@
-import { Typography } from "@mui/joy";
+import { Typography } from "@mui/material";
 import { useState } from "react";
 
 export default function ThemeIcons({ img, title }) {

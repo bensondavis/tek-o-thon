@@ -1,10 +1,11 @@
-import { Card } from "@mui/joy";
+import { Card } from "@mui/material";
+import { Stack } from "@mui/system";
 import { useEffect, useState } from "react";
 
 export default function PrizesSingle({ trophy, cash, position }) {
   const [imgSize, setImgSize] = useState(0);
-  useEffect(()=>{
-    switch(position) {
+  useEffect(() => {
+    switch (position) {
       case 1:
         setImgSize(240);
         break;
@@ -14,29 +15,20 @@ export default function PrizesSingle({ trophy, cash, position }) {
       case 3:
         setImgSize(170);
         break;
-      default: break;
+      default:
+        break;
     }
-  },[position]);
+  }, [position]);
   return (
-    <div className="section">
-      <Card
-        sx={{
-          backgroundColor: "transparent",
-          boxShadow: "none",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          minWidth: "250px",
-        }}
-      >
-        <img
-          src={trophy}
-          width={imgSize}
-          alt={"..."}
-          style={{ marginBottom: 15 }}
-        />
-        <img src={cash} width={125} alt={"..."} />
-      </Card>
-    </div>
+    <Stack
+      direction={"column"}
+      alignItems={"center"}
+      spacing={4}
+      justifyContent={"center"}
+      sx={{ minWidth: "250px" }}
+    >
+      <img src={trophy} width={imgSize} alt={trophy} />
+      <img src={cash} width={125} alt={cash} />
+    </Stack>
   );
 }

@@ -2,7 +2,7 @@ import AppBar from "../../components/Navbars/IndexNavbar";
 import Footer from "../../components/Footer/Footer";
 import { Container } from "reactstrap";
 import { useEffect } from "react";
-import { Typography, Stack } from "@mui/joy";
+import { Typography, Stack } from "@mui/material";
 
 export default function Winner() {
   useEffect(() => {

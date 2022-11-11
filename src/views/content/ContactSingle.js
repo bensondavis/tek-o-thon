@@ -1,7 +1,5 @@
-import Typography from "@mui/joy/Typography";
-import { Stack } from "@mui/joy";
-import Box from "@mui/joy/Box";
-import Link from "@mui/joy/Link";
+import { Stack, Typography } from "@mui/material";
+import Link from "@mui/material/Link";
 
 export default function ContactSingle({ name, phone, role, email }) {
   return (
@@ -26,22 +24,16 @@ export default function ContactSingle({ name, phone, role, email }) {
         >
           {name}
         </Typography>
-        <Typography sx={{ mt: -1, color: "#fff8" }}>{role}</Typography>
+        <Typography sx={{ mt: -1, color: "#fff8", opacity: 0.7 }}>{role}</Typography>
       </Stack>
       {phone ? (
         <Typography
           textTransform="uppercase"
-          // fontWeight="xl"
           mb={1}
           fontSize={"1.4rem"}
-          sx={{ color: "#d1d1d1", letterSpacing: "0.1rem", marginLeft: "auto" }}
+          sx={{ letterSpacing: "0.1rem", marginLeft: "auto" }}
         >
-          <Link
-            href={"tel:" + phone}
-            underline="none"
-            color="neutral"
-            variant="plain"
-          >
+          <Link href={"tel:" + phone} underline="none" color="#d1d1d1">
             {phone}
           </Link>
         </Typography>
@@ -51,15 +43,9 @@ export default function ContactSingle({ name, phone, role, email }) {
           textTransform="lowercase"
           mb={1}
           fontSize={"1.3rem"}
-          sx={{ color: "#d1d1d1", letterSpacing: "0rem", marginLeft: "auto" }}
+          sx={{ letterSpacing: "0rem", marginLeft: "auto" }}
         >
-          <Link
-            href={"mailto:" + email}
-            underline="none"
-            color="neutral"
-            variant="plain"
-            level="h3"
-          >
+          <Link href={"mailto:" + email} underline="none" color="#d1d1d1">
             {email}
           </Link>
         </Typography>

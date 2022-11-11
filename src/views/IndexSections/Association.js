@@ -3,7 +3,7 @@ import React from "react";
 import { Row } from "reactstrap";
 import acesLogo from "./files/aces.png";
 import tekwizaLogo from "../../assets/img/tekwizalogow.png";
-import { Typography } from "@mui/joy";
+import Typography from '@mui/material/Typography';
 
 export default function Signup() {
   return (

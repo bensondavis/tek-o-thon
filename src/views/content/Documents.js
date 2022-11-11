@@ -1,7 +1,7 @@
 import Appbar from "../../components/Navbars/IndexNavbar";
 import Footer from "../../components/Footer/Footer";
 import { useEffect, useState } from "react";
-import { Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/material";
 import Links from "./Links";
 
 export default function Documents() {

@@ -3,8 +3,8 @@ import Footer from "components/Footer/Footer.js";
 import React from "react";
 import TeamCard from "./ProfileCard";
 import { teamData, facultyData } from "../data/TeamData";
-import { Grid } from "@mui/joy";
-import { Typography } from "@mui/joy";
+import { Grid } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Container } from "reactstrap";
 import { useEffect } from "react";
 
@@ -36,6 +36,7 @@ export default function Team() {
             container
             justifyContent="center"
             spacing={{ xs: 2, sm: 3, md: 4 }}
+            
           >
             {facultyData.map((dat, index) => (
               <Grid item key={index}>
@@ -48,6 +49,7 @@ export default function Team() {
               </Grid>
             ))}
           </Grid>
+          <br/>
           <Grid
             container
             justifyContent="center"

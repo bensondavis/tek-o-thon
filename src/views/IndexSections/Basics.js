@@ -1,4 +1,4 @@
-import { Typography } from "@mui/joy";
+import Typography from '@mui/material/Typography';
 import React from "react";
 
 import {

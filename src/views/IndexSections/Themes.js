@@ -1,4 +1,4 @@
-import { Stack, Typography } from "@mui/joy";
+import { Stack, Typography } from "@mui/material";
 import React from "react";
 import { Container } from "reactstrap";
 import "@fontsource/anton";

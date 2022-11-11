@@ -1,6 +1,6 @@
 import { Container } from "reactstrap";
 import ImageView from "./ImageView";
-import { Stack } from "@mui/joy";
+import { Stack } from "@mui/material";
 import { imgData } from "../data/ImgData";
 
 function Links({ hideAppbar }) {
