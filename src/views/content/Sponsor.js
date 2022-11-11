@@ -42,7 +42,7 @@ export default function Sponsor() {
   return (
     <>
       <AppBar />
-      <div className="section section-signup" >
+      <div className="section section-signup">
         <div
           className="square square-7"
           id="square7"
@@ -61,7 +61,12 @@ export default function Sponsor() {
         <div
           className="square square-2"
           id="square2"
-          style={{ transform: squares1to6 , top: "60%", left: "70%", opacity: 0.5}}
+          style={{
+            transform: squares1to6,
+            top: "60%",
+            left: "70%",
+            opacity: 0.5,
+          }}
         />
         <div
           className="square square-3"
@@ -84,7 +89,7 @@ export default function Sponsor() {
           style={{ transform: squares1to6 }}
         />
         <Container>
-        <Typography
+          <Typography
             fontSize={"3rem"}
             fontWeight={550}
             sx={{
@@ -92,7 +97,7 @@ export default function Sponsor() {
               textAlign: "center",
               userSelect: "none",
               position: "relative",
-              zIndex: 3
+              zIndex: 3,
             }}
           >
             Sponsors
@@ -101,13 +106,20 @@ export default function Sponsor() {
             container
             spacing={3}
             direction={{ sm: "column", md: "row" }}
-            alignItems={"center"}
+            alignItems={"flex-start"}
             justifyContent={"center"}
             sx={{ position: "relative", zIndex: 3, mt: 0 }}
           >
             {gold.map((data, index) => (
               <Grid item key={index}>
-                <SponsorSingle img={data.img} />
+                <SponsorSingle
+                  img={data.img}
+                  link={data.link}
+                  fb={data.fb}
+                  insta={data.insta}
+                  twitter={data.twitter}
+                  linkedin={data.linkedin}
+                />
               </Grid>
             ))}
           </Grid>
@@ -121,7 +133,14 @@ export default function Sponsor() {
           >
             {silver.map((data, index) => (
               <Grid item key={index}>
-                <SponsorSingle img={data.img} />
+                <SponsorSingle
+                  img={data.img}
+                  link={data.link}
+                  fb={data.fb}
+                  insta={data.insta}
+                  twitter={data.twitter}
+                  linkedin={data.linkedin}
+                />
               </Grid>
             ))}
           </Grid>
@@ -135,7 +154,7 @@ export default function Sponsor() {
           >
             {bronze.map((data, index) => (
               <Grid item key={index}>
-                <SponsorSingle img={data.img} />
+                <SponsorSingle img={data.img} link={data.link} />
               </Grid>
             ))}
           </Grid>

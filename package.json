@@ -16,6 +16,7 @@
     "@emotion/styled": "^11.10.5",
     "@fontsource/anton": "^4.5.9",
     "@fontsource/russo-one": "^4.5.10",
+    "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.13",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
