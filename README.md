@@ -1,1 +1,1 @@
-Webpage for Tek-O-thon hackathon
+Webapp for Tek-O-thon hackathon
