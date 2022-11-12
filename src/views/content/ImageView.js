@@ -23,7 +23,6 @@ export default function ImageView({ img, title, hideAppbar }) {
           left: 0,
           width: "100%",
           height: "100%",
-          // zIndex: 10,
           background:
             "linear-gradient(to top, rgba(0,0,0,0.4), rgba(0,0,0,0) 200px), linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0) 300px)",
           pointerEvents: "none",

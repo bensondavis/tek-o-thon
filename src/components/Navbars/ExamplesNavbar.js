@@ -62,7 +62,7 @@ export default function ExamplesNavbar() {
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" id="navbar-brand" tag={Link}>
-            <img src={logo} width={25} />
+            <img src={logo} width={25} alt={"scsa"} />
             <span>Tek-O-thon </span>
           </NavbarBrand>
           <button

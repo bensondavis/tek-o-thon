@@ -1,9 +1,6 @@
 import { useEffect } from "react";
 
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import PageHeader from "components/PageHeader/PageHeader.js";
-import Footer from "components/Footer/Footer.js";
-
 import Association from "views/IndexSections/Association";
 import Basics from "views/IndexSections/Basics.js";
 import Themes from "views/IndexSections/Themes";
@@ -19,19 +16,15 @@ export default function Index() {
   }, []);
 
   return (
-    <>
-      <IndexNavbar />
-      <div className="wrapper">
-        <PageHeader />
-        <div className="main">
-          <Basics />
-          <Themes />
-          <Prizes />
-          <Association />
-          <Register />
-        </div>
-        <Footer />
+    <div className="wrapper">
+      <PageHeader />
+      <div className="main">
+        <Basics />
+        <Themes />
+        <Prizes />
+        <Association />
+        <Register />
       </div>
-    </>
+    </div>
   );
 }

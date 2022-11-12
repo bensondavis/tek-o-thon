@@ -27,7 +27,7 @@ export default function Signup() {
       </Typography>
       <br />
 
-      <Stack direction={"row"} spacing={4} justifyContent={"center"}>
+      <Stack direction={"row"} spacing={4} justifyContent={"center"} sx={{ position: "relative", zIndex: "1",}}>
         <img src={acesLogo} width={140} alt={"aces logo"} />
         <img src={tekwizaLogo} width={140} alt={"tekwiza logo"} />
       </Stack>

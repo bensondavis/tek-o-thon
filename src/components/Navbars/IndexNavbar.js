@@ -163,7 +163,7 @@ export default function IndexNavbar() {
                 href="https://forms.gle/Cv11dbYJrZXaPnTu6"
                 style={{ minWidth: "100px", textAlign: "center" }}
               >
-                <img src={rocket} width={20} style={{marginRight: 2}}/>
+                <img src={rocket} width={20} style={{marginRight: 2}} alt={"rocket"}/>
                 Register
               </Button>
             </NavItem>
