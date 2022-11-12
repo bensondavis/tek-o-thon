@@ -31,7 +31,7 @@ export default function PageHeader() {
             TEK-O-THON
           </Typography>
           
-          <Typography variant="h4" className={"title"}>
+          <Typography variant="body1" className={"title"}>
             THINK • CODE • INNOVATE
           </Typography>
         </Stack> 

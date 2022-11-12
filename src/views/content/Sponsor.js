@@ -154,7 +154,7 @@ export default function Sponsor() {
           >
             {bronze.map((data, index) => (
               <Grid item key={index}>
-                <SponsorSingle img={data.img} link={data.link} />
+                <SponsorSingle img={data.img} link={data.link} fb={data.fb} />
               </Grid>
             ))}
           </Grid>

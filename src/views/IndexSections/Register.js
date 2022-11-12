@@ -9,11 +9,11 @@ export default function Download() {
   return (
     <div className="section section-download">
       <img alt="..." className="path" src={require("assets/img/path1.png")} />
-      <Container>
+      {/* <Container> */}
         <Typography
           fontSize={"3rem"}
           fontWeight={550}
-          sx={{ textAlign: "center", color: "#d1d1d1" }}
+          sx={{ textAlign: "center", color: "#d1d1d1", userSelect: "none" }}
         >
           Registration
         </Typography>
@@ -25,7 +25,7 @@ export default function Download() {
           spacing={11}
           alignItems={"center"}
           justifyContent={"center"}
-          sx={{ zIndex: "1" }}
+          sx={{ zIndex: "1", p:2 }}
         >
           <img src={cover} alt={"cover"} width={500} />
           <div style={{ maxWidth: 500 }}>
@@ -68,7 +68,7 @@ export default function Download() {
             </Stack>
           </div>
         </Stack>
-      </Container>
+      {/* </Container> */}
       <br />
     </div>
   );
