@@ -4,6 +4,7 @@ import { Typography } from "@mui/material";
 // import Timer from "components/counter/Timer";
 // import Counter from "components/NewCounter/Counter";
 import { useEffect } from "react";
+import Download from "./Register";
 
 export default function Developer() {
   useEffect(() => {
@@ -26,13 +27,8 @@ export default function Developer() {
         >
           This is testing page
         </Typography>
+        <Download />
         {/* <Devfolio /> */}
-        <div
-          className="apply-button"
-          data-hackathon-slug="tekothon"
-          data-button-theme="light"
-          style={{ height: "44px", width: "312px" }}
-        ></div>
         {/* <Timer />
         <Counter /> */}
       </div>
