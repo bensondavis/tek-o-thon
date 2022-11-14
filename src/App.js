@@ -11,10 +11,11 @@ import Winner from "views/content/Winner";
 import Contact from "views/content/Contact";
 import Documents from "views/content/Documents";
 import Sponsor from "views/content/Sponsor";
-import Developer from "views/content/Developer";
+// import Developer from "views/content/Developer";
 
 import Appbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footer/Footer";
+import Devfolio from "components/DevfolioButton";
 
 export default function App() {
   const [showAppbar, setShowAppbar] = useState(true);
@@ -40,9 +41,10 @@ export default function App() {
         <Route path={"/winners"} render={(props) => <Winner {...props} />} />
         <Route path={"/team"} render={(props) => <Team {...props} />} />
         <Route path={"/contact"} render={(props) => <Contact {...props} />} />
-        <Route path={"/developer"} render={(props) => <Developer {...props} />} />
+        {/* <Route path={"/developer"} render={(props) => <Developer {...props} />} /> */}
         <Redirect from="*" to="/home" />
       </Switch>
+      <Devfolio/>
       <Footer />
     </>
   );

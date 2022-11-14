@@ -59,8 +59,8 @@ export default function Sponsor() {
         id="square2"
         style={{
           transform: squares1to6,
-          top: "60%",
-          left: "70%",
+          top: "400px",
+          left: "80%",
           opacity: 0.5,
         }}
       />
