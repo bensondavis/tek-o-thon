@@ -1,15 +1,14 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
-import { Button } from "reactstrap";
 import cover from "../../assets/tot-img/cover.jpg";
 import vote from "../../assets/icons/vote.png";
 import members from "../../assets/icons/members.png";
+import DevfolioButton from "components/Devfolio";
 
 export default function Download() {
   return (
-    <div className="section section-download">
+    <div id="register" className="section section-download">
       <img alt="..." className="path" src={require("assets/img/path1.png")} />
-      {/* <Container> */}
         <Typography
           fontSize={"3rem"}
           fontWeight={550}
@@ -54,21 +53,12 @@ export default function Download() {
                 sm: "center",
                 md: "flex-start",
               }}
+              sx={{position: "relative"}}
             >
-              <Button
-                className="btn-round"
-                color="info"
-                href="https://forms.gle/Cv11dbYJrZXaPnTu6"
-                // role="button"
-                size="lg"
-                style={{marginTop: "-1px"}}
-              >
-                Register Now
-              </Button>
+              <DevfolioButton/>
             </Stack>
           </div>
         </Stack>
-      {/* </Container> */}
       <br />
     </div>
   );

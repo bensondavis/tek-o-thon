@@ -1,27 +1,34 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
-import rocket from "../../assets/icons/rocket.png";
+// reactstrap components
 import {
-  Button,
   Collapse,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  UncontrolledDropdown,
   NavbarBrand,
   Navbar,
   NavItem,
+  DropdownToggle,
   NavLink,
+  DropdownMenu,
+  DropdownItem,
+  UncontrolledDropdown,
   Nav,
   Container,
 } from "reactstrap";
 
-export default function IndexNavbar() {
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
-  const [collapseOut, setCollapseOut] = React.useState("");
-  const [color, setColor] = React.useState("navbar-transparent");
-  React.useEffect(() => {
+export default function ExamplesNavbar() {
+  const [collapseOpen, setCollapseOpen] = useState(false);
+  const [collapseOut, setCollapseOut] = useState("");
+  const [color, setColor] = useState("navbar-transparent");
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+ useEffect(() => {
     window.addEventListener("scroll", changeColor);
     return function cleanup() {
       window.removeEventListener("scroll", changeColor);
@@ -40,25 +47,15 @@ export default function IndexNavbar() {
       setColor("navbar-transparent");
     }
   };
-
   const toggleCollapse = () => {
     document.documentElement.classList.toggle("nav-open");
     setCollapseOpen(!collapseOpen);
   };
-
   const onCollapseExiting = () => {
     setCollapseOut("collapsing-out");
   };
-
   const onCollapseExited = () => {
     setCollapseOut("");
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
   };
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
@@ -101,13 +98,12 @@ export default function IndexNavbar() {
             </button>
           </div>
           <Nav navbar>
-            {/* <NavItem className="p-0">
+            <NavItem className="p-0">
               <NavLink onClick={scrollToTop} tag={Link} to="/">
                 <i className="fa-solid fa-house"></i>
                 <p className="d-lg-none d-xl-none">Home</p>
               </NavLink>
-            </NavItem> */}
-
+            </NavItem>
             <UncontrolledDropdown nav>
               <DropdownToggle
                 caret
@@ -154,28 +150,6 @@ export default function IndexNavbar() {
                 </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
-            <br/>
-            <NavItem className="p-0">
-                <a href="#register">
-                  <Button
-                    className="nav-link d-lg-block"
-                    color="primary"
-                    target="_blank"
-                    // href="#register"
-                    onClick={collapseOpen ? toggleCollapse : null}
-                    style={{ minWidth: "100px", textAlign: "center" }}
-                  >
-                    <img
-                      src={rocket}
-                      width={20}
-                      style={{ marginRight: 0}}
-                      alt={"rocket"}
-                    />
-                    Register
-                  </Button>
-                </a>
-            </NavItem>
-            <br/>
             <NavItem className="p-0">
               <NavLink
                 data-placement="bottom"
@@ -196,7 +170,7 @@ export default function IndexNavbar() {
                 target="_blank"
                 title="Follow us on Discord"
               >
-                <i className="fa-brands fa-discord" ></i>
+                <i className="fa-brands fa-discord"></i>
                 <p className="d-lg-none d-xl-none">Discord</p>
               </NavLink>
             </NavItem>
@@ -212,6 +186,11 @@ export default function IndexNavbar() {
                 <p className="d-lg-none d-xl-none">Instagram</p>
               </NavLink>
             </NavItem>
+            {/* <NavItem>
+              <NavLink tag={Link} to="/">
+                Back to Home
+              </NavLink>
+            </NavItem> */}
           </Nav>
         </Collapse>
       </Container>

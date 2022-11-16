@@ -7,6 +7,8 @@ import Themes from "views/IndexSections/Themes";
 import Prizes from "./IndexSections/Prizes";
 import Register from "./IndexSections/Register";
 
+import Appbar from "components/Navbars/IndexNavbar";
+
 export default function Index() {
   useEffect(() => {
     document.body.classList.toggle("index-page");
@@ -16,15 +18,18 @@ export default function Index() {
   }, []);
 
   return (
-    <div className="wrapper">
-      <PageHeader />
-      <div className="main">
-        <Basics />
-        <Themes />
-        <Prizes />
-        <Association />
-        <Register />
+    <>
+      <Appbar />
+      <div className="wrapper">
+        <PageHeader />
+        <div className="main">
+          <Basics />
+          <Themes />
+          <Prizes />
+          <Association />
+          <Register />
+        </div>
       </div>
-    </div>
+    </>
   );
 }

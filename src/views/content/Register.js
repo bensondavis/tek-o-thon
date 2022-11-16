@@ -1,6 +1,5 @@
 import { Stack, Typography } from "@mui/material";
 import React from "react";
-import { Button } from "reactstrap";
 import cover from "../../assets/tot-img/cover.jpg";
 import vote from "../../assets/icons/vote.png";
 import members from "../../assets/icons/members.png";

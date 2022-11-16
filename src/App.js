@@ -1,5 +1,4 @@
 import { Route, Switch, Redirect } from "react-router-dom";
-import { useState } from "react";
 
 import "assets/scss/blk-design-system-react.scss";
 import "assets/demo/demo.css";
@@ -11,22 +10,12 @@ import Winner from "views/content/Winner";
 import Contact from "views/content/Contact";
 import Documents from "views/content/Documents";
 import Sponsor from "views/content/Sponsor";
-import Developer from "views/content/Developer";
 
-import Appbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footer/Footer";
-import Devfolio from "components/DevfolioButton";
 
 export default function App() {
-  const [showAppbar, setShowAppbar] = useState(true);
-
-  const handleHideAppbar = () => {
-    setShowAppbar(!showAppbar);
-  };
-
   return (
     <>
-      {showAppbar ? <Appbar /> : null}
       <Switch>
         <Route path="/home" render={(props) => <Index {...props} />} />
         <Route
@@ -35,16 +24,14 @@ export default function App() {
         />
         <Route
           path={"/documents"}
-          render={() => <Documents hideAppbar={handleHideAppbar} />}
+          render={(props) => <Documents {...props}/>}
         />
         <Route path={"/sponsors"} render={(props) => <Sponsor {...props} />} />
         <Route path={"/winners"} render={(props) => <Winner {...props} />} />
         <Route path={"/team"} render={(props) => <Team {...props} />} />
         <Route path={"/contact"} render={(props) => <Contact {...props} />} />
-        <Route path={"/developer"} render={(props) => <Developer {...props} />} />
         <Redirect from="*" to="/home" />
       </Switch>
-      <Devfolio/>
       <Footer />
     </>
   );
