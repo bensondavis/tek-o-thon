@@ -1,14 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.3210eff8.css",
-    "main.js": "/static/js/main.2f2d4938.js",
+    "main.css": "/static/css/main.bbb95a3c.css",
+    "main.js": "/static/js/main.72373d17.js",
     "static/media/square4.png": "/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/static/media/square1.082ea17aaf44aed9868a.png",
     "static/media/square3.png": "/static/media/square3.235ea41b7cee0696448d.png",
     "static/media/square2.png": "/static/media/square2.8ce0f9b6a9f216ada045.png",
     "static/media/square5.png": "/static/media/square5.16283001f5a086113265.png",
-    "static/media/darken-night.png": "/static/media/darken-night.049a2cd26a85856a45e6.png",
-    "static/media/night-sky.png": "/static/media/night-sky.e6a30d27482b2b409f71.png",
     "static/media/cover.jpg": "/static/media/cover.6e9f2c4005e73b346cd3.jpg",
     "static/media/poster.jpg": "/static/media/poster.3ae2e26f7614dadc7777.jpg",
     "static/media/benson.jpg": "/static/media/benson.053f22e2d8a943560815.jpg",
@@ -53,11 +51,11 @@
     "static/media/russo-one-cyrillic-400-normal.woff2": "/static/media/russo-one-cyrillic-400-normal.617bf411082776bf2261.woff2",
     "static/media/russo-one-latin-ext-400-normal.woff2": "/static/media/russo-one-latin-ext-400-normal.5b078dd3fd594657af46.woff2",
     "index.html": "/index.html",
-    "main.3210eff8.css.map": "/static/css/main.3210eff8.css.map",
-    "main.2f2d4938.js.map": "/static/js/main.2f2d4938.js.map"
+    "main.bbb95a3c.css.map": "/static/css/main.bbb95a3c.css.map",
+    "main.72373d17.js.map": "/static/js/main.72373d17.js.map"
   },
   "entrypoints": [
-    "static/css/main.3210eff8.css",
-    "static/js/main.2f2d4938.js"
+    "static/css/main.bbb95a3c.css",
+    "static/js/main.72373d17.js"
   ]
 }
