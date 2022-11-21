@@ -1,6 +1,6 @@
 import { Stack } from "@mui/system";
 import React from "react";
-import acesLogo from "./files/aces.png";
+import acesLogo from "assets/img/aces.PNG";
 import tekwizaLogo from "../../assets/img/tekwizalogow.png";
 import Typography from "@mui/material/Typography";
 
@@ -27,8 +27,14 @@ export default function Signup() {
       </Typography>
       <br />
 
-      <Stack direction={"row"} spacing={4} justifyContent={"center"} sx={{ position: "relative", zIndex: "1",}}>
-        <img src={acesLogo} width={140} alt={"aces logo"} />
+      <Stack
+        direction={"row"}
+        spacing={4}
+        alignItems="center"
+        justifyContent={"center"}
+        sx={{ position: "relative", zIndex: "1" }}
+      >
+        <img src={acesLogo} width={230} alt={"aces logo"} />
         <img src={tekwizaLogo} width={140} alt={"tekwiza logo"} />
       </Stack>
     </div>

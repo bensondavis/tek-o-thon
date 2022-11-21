@@ -2,8 +2,9 @@ import React from "react";
 import logo from "../../assets/img/tot-logo.png";
 import { Container } from "reactstrap";
 import { Stack, Typography } from "@mui/material";
-import "@fontsource/russo-one";
-// import Timer from "components/counter/Timer";
+import "../../assets/fonts/SLANT.TTF"
+import Timer from "components/counter/Timer";
+// import Counter from "components/counter/Counter";
 
 export default function PageHeader() {
   return (
@@ -22,20 +23,21 @@ export default function PageHeader() {
           alignItems="center"
           sx={{ minHeight: "100%" }}
         >
-          <img src={logo} width={280} alt={"logo"} />
+          <img src={logo} width={350} alt={"logo"} />
           <Typography
             fontSize={"3rem"}
             fontWeight={550}
-            sx={{ color: "white" }}
-            fontFamily={"Russo One"}
+            sx={{ color: "white", userSelect: "none", letterSpacing: 1, mt: -8}}
+            fontFamily={"Slant"}
           >
             TEK-O-THON
           </Typography>
           
-          <Typography variant="body1" className={"title"}>
+          <Typography variant="body1" className={"title"} sx={{userSelect: "none"}}>
             THINK • CODE • INNOVATE
           </Typography>
-          {/* <Timer/> */}
+          <Timer/>
+          {/* <Counter/> */}
         </Stack> 
       </Container>
     </div>

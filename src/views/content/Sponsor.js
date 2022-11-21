@@ -40,7 +40,7 @@ export default function Sponsor() {
   };
   return (
     <>
-      <Appbar/>
+      <Appbar />
       <div className="section section-signup">
         <div
           className="square square-7"
@@ -118,6 +118,8 @@ export default function Sponsor() {
                   insta={data.insta}
                   twitter={data.twitter}
                   linkedin={data.linkedin}
+                  width={data.width}
+                  height={data.height}
                 />
               </Grid>
             ))}
@@ -139,6 +141,8 @@ export default function Sponsor() {
                   insta={data.insta}
                   twitter={data.twitter}
                   linkedin={data.linkedin}
+                  width={data.width}
+                  height={data.height}
                 />
               </Grid>
             ))}
@@ -153,7 +157,13 @@ export default function Sponsor() {
           >
             {bronze.map((data, index) => (
               <Grid item key={index}>
-                <SponsorSingle img={data.img} link={data.link} fb={data.fb} />
+                <SponsorSingle
+                  img={data.img}
+                  link={data.link}
+                  fb={data.fb}
+                  width={data.width}
+                  height={data.height}
+                />
               </Grid>
             ))}
           </Grid>

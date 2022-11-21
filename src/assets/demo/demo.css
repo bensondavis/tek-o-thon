@@ -512,3 +512,13 @@ html, body {
 .to-front{
   z-index: 2;
 }
+
+@font-face {
+  font-family: 'Slant';
+  src: local('Slant'), url('../fonts/SLANT.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'ArchivoBlack-Regular';
+  src: local('ArchivoBlack-Regular'), url('../fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}

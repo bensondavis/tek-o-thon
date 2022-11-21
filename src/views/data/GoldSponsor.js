@@ -6,6 +6,8 @@ export const gold = [
   {
     img: jj,
     link: "https://www.jobinandjismi.com/",
+    width: "80%",
+    height: "",
   },
   {
     img: devfolio,
@@ -14,6 +16,8 @@ export const gold = [
     fb: "https://www.facebook.com/devfolio",
     insta: "https://www.instagram.com/devfolioco/",
     linkedin: "https://www.instagram.com/devfolioco/",
+    width: "80%",
+    height: "",
   },
   {
     img: polygon,
@@ -21,5 +25,7 @@ export const gold = [
     twitter: "https://twitter.com/0xPolygon",
     insta: "https://www.instagram.com/0xpolygon/",
     fb: "https://www.facebook.com/maticnetwork/",
+    width: "80%",
+    height: "",
   },
 ];

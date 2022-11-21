@@ -14,17 +14,20 @@ export default function SponsorSingle({
   linkedin,
   fb,
   insta,
+  width,
+  height
 }) {
   const [hover, setHover] = useState(false);
 
   const style = {
-    maxWidth: "250px",
+    width: "250px",
+    height: "80px",
     backgroundColor: "#1F2251",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     borderRadius: "10px",
-    minHeight: "80px",
+    padding: "5px"
   };
 
   const handleHover = () => {
@@ -34,7 +37,7 @@ export default function SponsorSingle({
   return (
     <div onMouseEnter={handleHover} onMouseLeave={handleHover}>
       <Box sx={style}>
-        <img src={img} width={"80%"} alt={"logo"} />
+        <img src={img} width={width}  height={height} alt={"logo"} />
       </Box>
       <Collapse in={hover}>
         <Stack direction={"row"} alignItems="center" justifyContent="center">
