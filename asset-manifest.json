@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbb95a3c.css",
-    "main.js": "/static/js/main.72373d17.js",
+    "main.css": "/static/css/main.97819298.css",
+    "main.js": "/static/js/main.359526ea.js",
     "static/media/square4.png": "/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/static/media/square1.082ea17aaf44aed9868a.png",
     "static/media/square3.png": "/static/media/square3.235ea41b7cee0696448d.png",
@@ -21,6 +21,7 @@
     "static/media/christy.jpg": "/static/media/christy.e305783def2fedfb15c2.jpg",
     "static/media/satheesh-sir.jpeg": "/static/media/satheesh-sir.c6333ad4e993be65af74.jpeg",
     "static/media/archana.jpg": "/static/media/archana.d3f217fb57f9929ef9d3.jpg",
+    "static/media/ArchivoBlack-Regular.ttf": "/static/media/ArchivoBlack-Regular.e35d38651492de9e7226.ttf",
     "static/media/manishankar-sir.jpg": "/static/media/manishankar-sir.68ad96d8900ff18ca297.jpg",
     "static/media/jj.png": "/static/media/jj.36329e954c60a2227774.png",
     "static/media/anagha.jpg": "/static/media/anagha.fe6ac3b8bb00fe94d9f5.jpg",
@@ -30,6 +31,7 @@
     "static/media/amal.jpg": "/static/media/amal.6145ce713811b6bbeb58.jpg",
     "static/media/edtech.png": "/static/media/edtech.09bd5b06ad65fcaa22cf.png",
     "static/media/path1.png": "/static/media/path1.a0d20b6041dada5ed4fd.png",
+    "static/media/aces.PNG": "/static/media/aces.7d06f890ebc557f35a4f.PNG",
     "static/media/logo.png": "/static/media/logo.18c81bdb06deade3ea1d.png",
     "static/media/members.png": "/static/media/members.172ffbf4becaced44b4e.png",
     "static/media/rocket.png": "/static/media/rocket.d3da1fb571a2d654dfda.png",
@@ -39,23 +41,19 @@
     "static/media/health.png": "/static/media/health.c6902f34166cc71f5d7f.png",
     "static/media/anton-latin-ext-400-normal.woff2": "/static/media/anton-latin-ext-400-normal.31155727a81b4ab9732b.woff2",
     "static/media/tot-logo.png": "/static/media/tot-logo.20ce55d3aad1a1d45f89.png",
-    "static/media/aces.png": "/static/media/aces.cdd98322794a756cc8ca.png",
     "static/media/gra.png": "/static/media/gra.d963e0e057c0dd31af5c.png",
+    "static/media/SLANT.TTF": "/static/media/SLANT.5f91013afc6c38e13a0e.TTF",
     "static/media/waste.png": "/static/media/waste.98c2d11fd12cf48fd980.png",
     "static/media/solana.png": "/static/media/solana.1148ac0688f5e8cc8c87.png",
-    "static/media/russo-one-all-400-normal.woff": "/static/media/russo-one-all-400-normal.d077bcf73b1bb3fdcacf.woff",
     "static/media/anton-latin-400-normal.woff2": "/static/media/anton-latin-400-normal.d1b9af350e094aacd397.woff2",
     "static/media/replit.png": "/static/media/replit.f0109a4d95ed94588b60.png",
     "static/media/anton-vietnamese-400-normal.woff2": "/static/media/anton-vietnamese-400-normal.cba0feb0a6581c193fe2.woff2",
-    "static/media/russo-one-latin-400-normal.woff2": "/static/media/russo-one-latin-400-normal.d973f367962785e06ddd.woff2",
-    "static/media/russo-one-cyrillic-400-normal.woff2": "/static/media/russo-one-cyrillic-400-normal.617bf411082776bf2261.woff2",
-    "static/media/russo-one-latin-ext-400-normal.woff2": "/static/media/russo-one-latin-ext-400-normal.5b078dd3fd594657af46.woff2",
     "index.html": "/index.html",
-    "main.bbb95a3c.css.map": "/static/css/main.bbb95a3c.css.map",
-    "main.72373d17.js.map": "/static/js/main.72373d17.js.map"
+    "main.97819298.css.map": "/static/css/main.97819298.css.map",
+    "main.359526ea.js.map": "/static/js/main.359526ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbb95a3c.css",
-    "static/js/main.72373d17.js"
+    "static/css/main.97819298.css",
+    "static/js/main.359526ea.js"
   ]
 }
