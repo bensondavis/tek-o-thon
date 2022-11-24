@@ -4,7 +4,6 @@ import { Container } from "reactstrap";
 import { Stack, Typography } from "@mui/material";
 import "../../assets/fonts/SLANT.TTF"
 import Timer from "components/counter/Timer";
-// import Counter from "components/counter/Counter";
 
 export default function PageHeader() {
   return (
@@ -37,7 +36,6 @@ export default function PageHeader() {
             THINK • CODE • INNOVATE
           </Typography>
           <Timer/>
-          {/* <Counter/> */}
         </Stack> 
       </Container>
     </div>

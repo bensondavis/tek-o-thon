@@ -6,6 +6,8 @@ import { gold } from "views/data/GoldSponsor";
 import { silver } from "views/data/SilverSponsor";
 import { bronze } from "views/data/BronzeSponsor";
 import Appbar from "components/Navbars/ContentNavbar";
+import Divider from '@mui/material/Divider';
+import Chip from '@mui/material/Chip';
 
 export default function Sponsor() {
   const [squares1to6, setSquares1to6] = useState("");
@@ -101,6 +103,7 @@ export default function Sponsor() {
           >
             Sponsors
           </Typography>
+          <Divider><Chip sx={{color: "white"}} label="Gold Sponsors" /></Divider>
           <Grid
             container
             spacing={3}
@@ -124,6 +127,7 @@ export default function Sponsor() {
               </Grid>
             ))}
           </Grid>
+          <Divider sx={{mt:3}}><Chip sx={{color: "white"}} label="Silver Sponsors" /></Divider>
           <Grid
             container
             spacing={3}
@@ -147,6 +151,7 @@ export default function Sponsor() {
               </Grid>
             ))}
           </Grid>
+          <Divider sx={{ mt:3}}><Chip sx={{color: "white"}} label="Bronze Sponsors" /></Divider>
           <Grid
             container
             spacing={3}
@@ -160,7 +165,7 @@ export default function Sponsor() {
                 <SponsorSingle
                   img={data.img}
                   link={data.link}
-                  fb={data.fb}
+                  insta={data.insta}
                   width={data.width}
                   height={data.height}
                 />

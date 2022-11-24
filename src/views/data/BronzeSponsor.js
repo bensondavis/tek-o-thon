@@ -1,11 +1,11 @@
-import gra from "../../assets/sponsor-logo/gra.png";
+import indot from "../../assets/sponsor-logo/indot.png";
 
 export const bronze = [
     {
-        img: gra,
-        link: "https://gracoustics.com/",
-        fb: "https://www.facebook.com/gracousticskochi/",
-        width: "",
-        height: "75px",
+        img: indot,
+        link: "https://indotphotobook.com/web/home",
+        insta: "https://instagram.com/indotweddingalbum_printers?igshid=YmMyMTA2M2Y=",
+        width: "80%",
+        height: "",
     },
 ]

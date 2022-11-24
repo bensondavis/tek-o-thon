@@ -8,10 +8,10 @@ export default function Counter({ time, title }) {
         alignItems={"center"}
         justifyContent={"center"}
       >
-        <Typography fontFamily={"ArchivoBlack-Regular"} fontSize={"3rem"}>
+        <Typography fontFamily={"ArchivoBlack-Regular"} fontSize={"3rem"} sx={{color: "white"}}>
           {time}
         </Typography>
-        <Typography  fontSize={"1.3rem"}>
+        <Typography  fontSize={"1.3rem"} sx={{color: "white"}}>
           {title}
         </Typography>
       </Stack>
