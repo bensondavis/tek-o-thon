@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.97819298.css",
-    "main.js": "/static/js/main.97660b22.js",
+    "main.js": "/static/js/main.69ed7045.js",
     "static/media/square4.png": "/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/static/media/square1.082ea17aaf44aed9868a.png",
     "static/media/square3.png": "/static/media/square3.235ea41b7cee0696448d.png",
@@ -27,6 +27,7 @@
     "static/media/manishankar-sir.jpg": "/static/media/manishankar-sir.68ad96d8900ff18ca297.jpg",
     "static/media/jj.png": "/static/media/jj.36329e954c60a2227774.png",
     "static/media/anagha.jpg": "/static/media/anagha.fe6ac3b8bb00fe94d9f5.jpg",
+    "static/media/live.png": "/static/media/live.3b29a7e00ac38bea2c97.png",
     "static/media/aswin.jpg": "/static/media/aswin.2e31af2b2862180f10d1.jpg",
     "static/media/anton-all-400-normal.woff": "/static/media/anton-all-400-normal.d54f0068c168b4dc72b0.woff",
     "static/media/aston.jpeg": "/static/media/aston.f3d9ad9ecd1dda55d0ed.jpeg",
@@ -52,10 +53,10 @@
     "static/media/anton-vietnamese-400-normal.woff2": "/static/media/anton-vietnamese-400-normal.cba0feb0a6581c193fe2.woff2",
     "index.html": "/index.html",
     "main.97819298.css.map": "/static/css/main.97819298.css.map",
-    "main.97660b22.js.map": "/static/js/main.97660b22.js.map"
+    "main.69ed7045.js.map": "/static/js/main.69ed7045.js.map"
   },
   "entrypoints": [
     "static/css/main.97819298.css",
-    "static/js/main.97660b22.js"
+    "static/js/main.69ed7045.js"
   ]
 }
