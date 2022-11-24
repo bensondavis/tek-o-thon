@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.97819298.css",
-    "main.js": "/static/js/main.359526ea.js",
+    "main.js": "/static/js/main.97660b22.js",
     "static/media/square4.png": "/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/static/media/square1.082ea17aaf44aed9868a.png",
     "static/media/square3.png": "/static/media/square3.235ea41b7cee0696448d.png",
@@ -13,12 +13,14 @@
     "static/media/schedule.jpg": "/static/media/schedule.0504f53ef0e3dd927e06.jpg",
     "static/media/guidelines.jpg": "/static/media/guidelines.0c4877d323d36f6f70c6.jpg",
     "static/media/dots.png": "/static/media/dots.1e305f981d41a2c30adb.png",
+    "static/media/wellfit.png": "/static/media/wellfit.c0a6e330bbda64e21f02.png",
     "static/media/gokul.jpg": "/static/media/gokul.cecc5de1e4cfbdc66105.jpg",
     "static/media/anna.jpg": "/static/media/anna.e16f95c73ba234f8a781.jpg",
     "static/media/hari.jpg": "/static/media/hari.ece92f9f3fde0575790b.jpg",
     "static/media/ayyappan.jpg": "/static/media/ayyappan.8e88f8d3bac683afcfd6.jpg",
     "static/media/sundar-sir.jpeg": "/static/media/sundar-sir.aa497e5d5653ef083b93.jpeg",
     "static/media/christy.jpg": "/static/media/christy.e305783def2fedfb15c2.jpg",
+    "static/media/indot.png": "/static/media/indot.f4fc2a432ea1bb7c7b87.png",
     "static/media/satheesh-sir.jpeg": "/static/media/satheesh-sir.c6333ad4e993be65af74.jpeg",
     "static/media/archana.jpg": "/static/media/archana.d3f217fb57f9929ef9d3.jpg",
     "static/media/ArchivoBlack-Regular.ttf": "/static/media/ArchivoBlack-Regular.e35d38651492de9e7226.ttf",
@@ -50,10 +52,10 @@
     "static/media/anton-vietnamese-400-normal.woff2": "/static/media/anton-vietnamese-400-normal.cba0feb0a6581c193fe2.woff2",
     "index.html": "/index.html",
     "main.97819298.css.map": "/static/css/main.97819298.css.map",
-    "main.359526ea.js.map": "/static/js/main.359526ea.js.map"
+    "main.97660b22.js.map": "/static/js/main.97660b22.js.map"
   },
   "entrypoints": [
     "static/css/main.97819298.css",
-    "static/js/main.359526ea.js"
+    "static/js/main.97660b22.js"
   ]
 }
