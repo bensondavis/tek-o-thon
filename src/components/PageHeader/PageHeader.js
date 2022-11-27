@@ -3,7 +3,6 @@ import logo from "../../assets/img/tot-logo.png";
 import { Container } from "reactstrap";
 import { Stack, Typography } from "@mui/material";
 import "../../assets/fonts/SLANT.TTF"
-import Timer from "components/counter/Timer";
 
 export default function PageHeader() {
   return (
@@ -35,7 +34,6 @@ export default function PageHeader() {
           <Typography variant="body1" className={"title"} sx={{userSelect: "none"}}>
             THINK • CODE • INNOVATE
           </Typography>
-          <Timer/>
         </Stack> 
       </Container>
     </div>
